@@ -72,7 +72,7 @@ img{
 }
 
 .navbarOne{
-/* color: brown; */
+
 background-color: #008000;
 }
 
@@ -118,28 +118,30 @@ ul {
   
   li {
     float: left;
-    border-right:2px solid #bbb;
+    
   }
   
   li a {
     display: block;
     color: white;
-    /* color: blue; */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
   }
+  /* li a :hover{
+    background-color: #111;
+  } */
   li a:hover:not(.active) { 
     background-color: #111; 
-   } 
+   }  
    
-  .active {
+   .active {
     background-color: #04AA6D;
   }
 img{
     width: 90%;
     height: 520px;
-    padding-left: 110px;
 }
 
 #pictureOne{
@@ -148,11 +150,10 @@ img{
 
 #divOne{
   width: 300px;
-  border: 2px solid green;
-  /* padding: 150px; */
   margin-top: 130px;
   margin-bottom: 150px;
-  
+  margin-left: 20px;
+  background-color: #808080;
 }
 
 #contact{
@@ -161,30 +162,30 @@ img{
     width: 97%;
     color : #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 14px 16px;
+    padding: 20px 25px;
 }
 
 .navbarOne{
-/* color: brown; */
 background-color: #008000;
-margin-top: 70px;
+margin-top: 40px;
 width: 143px;
 }
 
 #contactOne{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .contactTwo{
   padding-left: 50px;
 }
 
 .navbarTwo{
-  padding-left: 250px;
+  padding-left: 230px;
+  padding-top: 40px;
   
 }
 .btn{
-  width: 690px;
+  width: 680px;
   height: 30px;
   background-color: red;
   color: #ffffff;
