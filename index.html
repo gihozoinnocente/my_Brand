@@ -5,44 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/main.css">
-    <!-- <link rel="stylesheet" href="CSS/style.css"> -->
-    <link href="https://fonts.google.com/specimen/Libre+Franklin" rel="stylesheet">
-    <title>MY BRAND</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>MY BRAND| Junior Frontend developer</title>
     <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
 </head>
 
-
 <body>
-    <main>
+    <div class="container">
+        <div id="bodyOne">
 
-        <div id="two">
-            <div id="header">
-                <ul>
+            <nav>
+                <div class="containerOne">
+                    <div>
+                        <!-- <input type="checkbox" id="check"> -->
+                        <!-- <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label> -->
+                        <button class="btnOne" onclick="myFunction()"><i class="fas fa-bars"></i></button>
+                    </div>
 
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#news">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#portofolio">PORTOFOLIO</a></li>
-                    <li><a href="#blogs">BLOGS</a></li>
-                    <li><a href="#contact">CONTACT ME</a></li>
-                </ul>
-            </div>
+                    <div class="header"><label for="logo" class="logo">
+                            <p class="name">Innocente Gihozo </p>
+                            <p class="nameOne"> Junior software developer</p>
+                        </label></div>
+
+
+
+                </div>
+                <div id="bars">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><i class="fas fa-user"></i><a href="about.html">ABOUT</a></li>
+                        <li><i class="fas fa-pen"></i><a href="blogs.html">BLOGS</a></li>
+                        <li><i class="fas fa-calendar-minus"></i><a href="portofolio.html">PORTOFOLIO</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="contact.html">CONTACT</a></li>
+                        <li><i class="fas fa-file"></i><a href="resume.html">RESUME</a></li>
+
+                    </ul>
+                </div>
+
+            </nav>
+
+
+
         </div>
-
-        <div id="one">
-            <div class="divOne ">
-                <p> Innocente Gihozo </br>Full stuck developer</p>
-            </div>
-            <div id="pictureOne">
-                <p>I want to make things that makes a difference</p>
-                <!-- <img src="./Image/image1.jpeg"> -->
-            </div>
+        <div id="bodyTwo">
+            <p>I want to make things</br> that makes a difference</p>
         </div>
+    </div>
 
-
+    <div id="bodyFour">
         <p id="contact">CONTACT</p>
         <div id="contactOne">
             <div class="contactTwo">
@@ -64,19 +75,29 @@
             </div>
             <div class="navbarTwo">
                 <label>
-                    <textarea class="postTitle" name=" title" rows="2" cols="43" placeholder="NAME"></textarea>
-                    <textarea class="postTitle" name=" title" rows="2" cols="43" placeholder="Email"></textarea>
-                    <textarea " name=" description" rows="10" cols="90" placeholder="MESSAGE"></textarea>
+                    <textarea class="postTitle" name=" title" rows="2" cols="18" placeholder="NAME"></textarea>
+                    <textarea class="postTitle" name=" title" rows="2" cols="18" placeholder="Email"></textarea>
+                    <textarea " name=" description" rows="10" cols="40" placeholder="MESSAGE"></textarea>
                 </label>
+                <br>
                 <button type="button" class="btn">SEND</button>
 
 
             </div>
         </div>
 
-
+    </div>
     </main>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("bars");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 
 
 </body>
