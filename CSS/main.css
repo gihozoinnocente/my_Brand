@@ -192,11 +192,26 @@ h1 {
 }
 /* BLOG */
 #bodySeven {
-  margin-left: 15%;
+  margin-left: 0%;
   height: 100vh;
 }
 
-#blog {
+.blogGen {
+  display: flex;
+
+  justify-content: space-around;
+  padding: 20px;
+  padding-top: 100px;
+  padding-right: 40px;
+}
+.blogGen section {
+  width: 240px;
+  height: 300px;
+
+  box-shadow: 30px;
+  border: 1px solid blue;
+}
+#blogs {
   color: #fff;
   background-color: #04aa6d;
   padding-top: 40px;
@@ -204,9 +219,43 @@ h1 {
   font-size: 30px;
   height: 100px;
 }
+/* 
+.blogOne {
+  height: 45%;
+  width: 20%;
+  border: 1px black solid;
+  box-shadow: 10px;
+  margin: 30px;
+  border-radius: 10%;
+  padding: 40px;
+}
+.blogTwo {
+  height: 45%;
+  width: 20%;
+  border: 1px solid;
+  margin: 30px;
+  border-radius: 10%;
+  padding: 40px;
+}
+.blogThree {
+  height: 45%;
+  width: 20%;
+  border: 1px solid;
+  margin: 30px;
+  border-radius: 10%;
+  padding: 40px;
+}
+.blogFour {
+  height: 45%;
+  width: 20%;
+  border: 1px solid;
+  margin: 30px;
+  border-radius: 10%;
+  padding: 40px;
+} */
 
 #bodyFour {
-  margin-left: 15%;
+  margin-left: 0%;
   height: 100vh;
 }
 #contact {
@@ -402,6 +451,46 @@ h1 {
     display: block;
   }
 
+  #bodySeven {
+    height: 100%;
+  }
+  .blogGen {
+    display: block;
+  }
+
+  .blogOne {
+    height: 15%;
+    width: 90%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 5%;
+    padding: 10px;
+  }
+  .blogTwo {
+    height: 15%;
+    width: 90%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 5%;
+    padding: 10px;
+  }
+
+  .blogThree {
+    height: 15%;
+    width: 90%;
+    border: 1px solid;
+    margin: 30px;
+    border-radius: 5%;
+    padding: 10px;
+  }
+  .blogFour {
+    height: 15%;
+    width: 90%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 5%;
+    padding: 10px;
+  }
   #bodyFour {
     margin-left: 0px;
   }

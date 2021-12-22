@@ -1,8 +1,6 @@
 .loginOne {
   height: 100vh;
-  /* border: 1px solid; */
   width: 100%;
-  /* margin-left: 25%; */
   margin-top: 5%;
 }
 .login {
@@ -18,9 +16,7 @@ input[type="text"],
 input[type="password"] {
   width: 50%;
   padding: 12px 20px;
-  /* margin: 8px 0px; */
   margin-left: 25%;
-  /* margin-top: 100px; */
   display: inline-block;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -33,17 +29,14 @@ label.lbl {
 
 label.password {
   margin-left: 50%;
-  /* margin-top: 100px; */
 }
 
 .btn {
-  margin-left: 15%;
+  margin-left: 18%;
   margin-top: 20px;
   color: white;
   background-color: red;
   border-radius: 20px;
-  width: 200px;
-  height: 30px;
 }
 
 input[type="checkbox"] {

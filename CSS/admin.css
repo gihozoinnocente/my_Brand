@@ -1,0 +1,10 @@
+.container {
+  background-color: darkblue;
+  display: flex;
+  /* flex-direction: row-reverse; */
+}
+
+#bars {
+  height: 100vh;
+  background-color: darkgoldenrod;
+}
