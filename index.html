@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <title>MY BRAND| Junior Frontend developer</title>
     <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
 </head>
@@ -13,23 +14,26 @@
 <body>
     <div class="container">
         <div id="bodyOne">
-            <nav class="fixed">
+            <nav class="fixed" class="navbar">
                 <div class="containerOne">
-                    <div>
-                        <button class="btnOne" onclick="myFunction()"><i class="fas fa-bars"></i></button>
-                    </div>
                     <div class="header"><label for="logo" class="logo">
                             <p class="name">Innocente Gihozo </p>
                             <p class="nameOne"> Junior software developer</p>
                         </label></div>
                 </div>
                 <div id="bars">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><i class="fas fa-user"></i><a href="#bodyThree">ABOUT</a></li>
-                        <li style="margin-right: 10pz;"><i class="fas fa-pen"></i><a href="blogs.html">BLOGS</a></li>
-                        <li><i class="fas fa-calendar-minus"></i><a href="portofolio.html">PORTOFOLIO</a></li>
-                        <li><i class="fas fa-envelope"></i><a href="#bodyFour">CONTACT</a></li>
+                    <ul class="logo1" class="nav-links">
+                        <input type="checkbox" id="checkbox_toggle" />
+                        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                        <div class="menu">
+                            <li class="indexOne"><a href="index.html">HOME</a></li>
+                            <li class="aboutOne"><a href="#bodyThree">ABOUT ME</a></li>
+                            <li class="skillsOne"><a href="#bodyFive">SKILLS</a></li>
+                            <li class="portoOne"><a href="#bodySix">PORTOFOLIO</a></li>
+                            <li class="blogOne"><a href="#bodySeven">BLOGS</a></li>
+                            <li class="cont"><a href="#bodyFour">CONTACT ME</a></li>
+                        </div>
+
                     </ul>
                 </div>
             </nav>
@@ -40,15 +44,51 @@
     </div>
     <div id="bodyThree">
         <p id="about">ABOUT</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet esse quia quod quaerat cumque quas dolor
+        <p id="aboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet esse quia quod quaerat cumque
+            quas dolor
             quam voluptate assumenda officiis? Ducimus ratione perspiciatis enim eos fuga veniam quas, facilis
             dignissimos
             inventore nihil numquam soluta earum voluptatibus
             eligendi fugiat! Molestiae, sed assumenda voluptatibus excepturi laudantium tenetur numquam odio optio error
-            illum.</p>
+            illum.</br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae provident ut illum a beatae,
+            soluta eveniet velit fugit itaque pariatur?</p>
     </div>
     <div id="bodyFive">
-        <p id=blog>BLOG</p>
+        <p id="skills">SKILLS</p>
+        <h1>HTML</h1>
+        <img class="skillsTwo" src="./Image/HTML5.jpeg">
+        <img class="skillsTwo" src="./Image/HTML.jpeg">
+        <br>
+        <h1>CSS</h1>
+        <img class="skillsTwo" src="./Image/css.jpeg" alt="">
+        <br>
+        <h1>JAVASCRIPT</h1>
+        <img class="skillsTwo" src="./Image/React.jpeg" alt="">
+        <img class="skillsTwo" src="./Image/js.jpeg" alt="">
+    </div>
+    <div id="bodySix">
+        <p id="porto">PORTOFOLIO</p>
+        <div class="portoFour">
+            <div class="portoTwo">
+                <div> <img class="web" src="./Image/web.jpeg" alt=""></div>
+                <div>
+                    <p class="portoFive">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat, similique veritatis quibusdam deleniti dolore soluta maxime ea corrupti
+                        perferendis voluptatum! <span class="portoSix">Read more...</span></p>
+                </div>
+            </div>
+
+            <div class="portoThree">
+                <div><img class="web" src="./Image/web1.jpeg" alt=""></div>
+                <div>
+                    <p class="portoFive">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat, similique veritatis quibusdam deleniti dolore soluta maxime ea corrupti
+                        perferendis voluptatum! <span class="portoSix">Read more...</span></p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
     <div id="bodyFour">
         <p id="contact">CONTACT</p>
@@ -70,9 +110,9 @@
             </div>
             <div class="navbarTwo">
                 <label>
-                    <textarea class="postTitle" name=" title" rows="2" cols="18" placeholder="NAME"></textarea>
-                    <textarea class="postTitle" name=" title" rows="2" cols="18" placeholder="Email"></textarea>
-                    <textarea " name=" description" rows="10" cols="40" placeholder="MESSAGE"></textarea>
+                    <textarea class="postTitle" name=" title" rows="2" cols="40" placeholder="NAME"></textarea>
+                    <textarea class="postTitle" name=" title" rows="2" cols="40" placeholder="Email"></textarea>
+                    <textarea name=" description" rows="10" cols="40" placeholder="MESSAGE"></textarea>
                 </label>
                 <br>
                 <button type="button" class="btn">SEND</button>

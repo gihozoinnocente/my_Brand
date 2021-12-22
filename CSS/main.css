@@ -11,45 +11,36 @@ body {
 
 nav {
   height: 100vh;
-  width: 30vw;
+  width: 15vw;
   margin-left: 0px;
 }
-label.logo {
-  border: 1px solid;
-}
 .name {
-  font-size: 55px;
+  font-size: 40px;
   line-height: 50px;
-  padding-left: 15%;
+  padding-left: 13%;
+  padding-top: 50px;
   align-items: center;
 }
 .nameOne {
   padding-left: 15%;
   color: black;
-  font-size: 20px;
-}
-nav ul {
-  margin-right: 40px;
+  font-size: 13px;
 }
 nav li {
   display: block;
-  line-height: 60px;
-  padding-left: 130px;
+  line-height: 40px;
+  list-style: none;
   margin: 0 8px;
 }
 
 nav a {
   color: black;
   font-size: 18px;
-  padding: 3px 5px;
   border-radius: 3px;
 }
 
 #bars {
   margin-top: 10px;
-}
-.btnOne {
-  display: none;
 }
 .checkbtn {
   font-size: 30px;
@@ -62,6 +53,26 @@ nav a {
 .fixed {
   position: fixed;
   margin-left: 0;
+  margin-bottom: 0px;
+}
+
+.indexOne {
+  margin-left: 50px;
+}
+.aboutOne {
+  margin-left: 30px;
+}
+.skillsOne {
+  margin-left: 50px;
+}
+.portoOne {
+  margin-left: 25px;
+}
+.blogOne {
+  margin-left: 50px;
+}
+.cont {
+  margin-left: 30px;
 }
 #bodyTwo {
   color: whitesmoke;
@@ -70,8 +81,7 @@ nav a {
   background-size: 100vw 100vh;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
-  margin-left: 30%;
+  margin-left: 15%;
   padding: 30px;
   font-size: 30px;
   letter-spacing: 0.3rem;
@@ -79,52 +89,134 @@ nav a {
 .container {
   display: flex;
 }
-
 .header {
   background-color: rgb(231, 224, 224);
-  height: 40vh;
+  height: 30vh;
 }
-
 /* ABOUT */
 
 #bodyThree {
-  margin-left: 30%;
+  margin-left: 15%;
   height: 100vh;
 }
 
 #about {
   height: 100px;
-  width: 100vw;
   color: #fff;
   background-color: #04aa6d;
+  padding-top: 40px;
+  padding-left: 50px;
+  font-size: 30px;
 }
 
-/* BLOG */
+#aboutText {
+  margin-left: 150px;
+  margin-right: 50px;
+  line-height: 20px;
+  margin-top: 100px;
+  letter-spacing: 0.3rem;
+}
+
+/* PORTOFOLIO */
 
 #bodyFive {
-  margin-left: 30%;
+  margin-left: 15%;
+  height: 100vh;
+  justify-content: center;
+}
+
+#skills {
+  height: 100px;
+  color: #fff;
+  background-color: #04aa6d;
+  padding-top: 40px;
+  padding-left: 50px;
+  font-size: 30px;
+}
+img {
+  height: 100px;
+  width: 150px;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+h1 {
+  padding-left: 100px;
+}
+
+/* PORTOFolio*/
+
+#bodySix {
+  margin-left: 15%;
+  height: 100vh;
+}
+
+#porto {
+  color: #fff;
+  background-color: #04aa6d;
+  padding-top: 40px;
+  padding-left: 50px;
+  font-size: 30px;
+  height: 100px;
+}
+.web {
+  height: 200px;
+  width: 350px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.portoTwo {
+  border: 1px solid;
+  height: 100%;
+  width: 40%;
+  margin-top: 10%;
+  border-radius: 5%;
+  margin-left: 10%;
+}
+
+.portoThree {
+  border: 1px solid;
+  width: 40%;
+  margin-top: 10%;
+  border-radius: 5%;
+  margin-left: 50px;
+}
+.portoFour {
+  display: flex;
+}
+
+.portoFive {
+  padding: 40px;
+}
+.portoSix {
+  font-weight: bold;
+}
+/* BLOG */
+#bodySeven {
+  margin-left: 15%;
   height: 100vh;
 }
 
 #blog {
-  width: 100vw;
-  height: 100px;
   color: #fff;
   background-color: #04aa6d;
+  padding-top: 40px;
+  padding-left: 50px;
+  font-size: 30px;
+  height: 100px;
 }
 
-/* CONTACT */
 #bodyFour {
-  margin-left: 30%;
+  margin-left: 15%;
   height: 100vh;
 }
 #contact {
   background-color: #04aa6d;
   height: 100px;
-  width: 100%;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
   padding: 20px 25px;
+  padding-top: 40px;
+  padding-left: 50px;
+  font-size: 30px;
 }
 
 .navbarOne {
@@ -137,6 +229,7 @@ nav a {
 }
 .contactTwo {
   padding-left: 50px;
+  padding-top: 50px;
 }
 
 .navbarTwo {
@@ -154,7 +247,8 @@ nav a {
 
 @media (max-width: 480px) {
   .containerOne {
-    width: 100vw;
+    width: 100%;
+    height: 20%;
   }
   label.logo {
     border: 1px solid;
@@ -162,27 +256,28 @@ nav a {
     width: 100%;
   }
   .header {
-    background-color: white;
-    height: 100px;
+    background-color: #333;
+    height: 50%;
+    width: 100%;
   }
-  .btnOne {
-    float: left;
-  }
-
   .name {
-    font-size: 30px;
+    font-size: 100%;
     color: #009688;
+    margin-top: -20%;
   }
   .nameOne {
-    font-size: 15px;
-    margin-left: 20px;
+    font-size: 80%;
+    margin-left: 0px;
     color: black;
-    opacity: 40%;
+    margin-top: -5%;
+    opacity: 70%;
   }
-
+  nav {
+    width: 100%;
+  }
   nav ul {
     margin-right: 0px;
-    background-color: white;
+    background-color: none;
   }
   nav li {
     display: block;
@@ -207,17 +302,106 @@ nav a {
   #bars {
     margin-top: 0px;
   }
+  .fixed {
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 0px;
+  }
   #bodyTwo {
     margin-left: 0px;
-    width: 100vw;
-    height: 500px;
-    padding-top: 20px;
+    padding: 0px;
     background-repeat: no-repeat;
-    background-size: 100vw 60vh;
-    padding-top: 100px;
+    background-size: 100% 100%;
     font-size: 15px;
     letter-spacing: 0.2rem;
+    margin-top: -160%;
   }
+
+  #bodyThree {
+    margin-left: 0%;
+    height: 100%;
+  }
+
+  #about {
+    height: 50px;
+    color: #fff;
+    background-color: #04aa6d;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+  }
+
+  #aboutText {
+    margin-left: 2px;
+    margin-right: 2px;
+    line-height: 15px;
+    margin-top: 5px;
+    letter-spacing: 0.2rem;
+  }
+
+  #bodyFive {
+    margin-left: 0%;
+    height: 100%;
+  }
+
+  #skills {
+    height: 50px;
+    color: #fff;
+    background-color: #04aa6d;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+  }
+  img {
+    height: 20%;
+    width: 60%;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+  h1 {
+    padding-left: 60px;
+  }
+
+  #bodySix {
+    margin-left: 0%;
+    height: 100%;
+  }
+
+  #porto {
+    height: 50px;
+    color: #fff;
+    background-color: #04aa6d;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+  }
+  .web {
+    height: 200px;
+    width: 230px;
+    padding-top: 20px;
+  }
+
+  .portoTwo {
+    border: 1px solid;
+    height: 100%;
+    width: 80%;
+    margin-top: 10%;
+    border-radius: 5%;
+    margin-left: 10%;
+  }
+
+  .portoThree {
+    border: 1px solid;
+    width: 80%;
+    margin-top: 10%;
+    border-radius: 5%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  .portoFour {
+    display: block;
+  }
+
   #bodyFour {
     margin-left: 0px;
   }
@@ -226,23 +410,29 @@ nav a {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    display: inline-block;
+    height: 30%;
   }
 
   .navbarTwo {
     padding-left: 10px;
-    padding-top: 0px;
-    margin: 0px 0px 0px 0px;
+    margin-left: 40px;
   }
 
   #contact {
-    background-color: #04aa6d;
     height: 50px;
-    width: 100%;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #04aa6d;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 15px;
   }
   #contactOne {
     display: block;
+  }
+  .contactTwo {
+    margin-top: 30px;
+    /* margin-left: 40px; */
   }
   .btn {
     width: 200px;
