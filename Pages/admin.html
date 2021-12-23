@@ -7,37 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/admin.css">
     <title>ADMIN PANEL</title>
+    <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
-    <div class="container">
 
-        <div id="bars">
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+            <p>Innocente Gihozo</p>
+        </div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="#">WRITE</a></li>
+                <li><a href="#">MANAGE</a></li>
+                <li><a href="#">SETTING</a></li>
+                <li><a href="#">USER</a></li>
+            </div>
+        </ul>
+    </nav>
 
-            <nav class="fixed" class="navbar"></nav>
-            <ul class="logo1" class="nav-links">
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                <!-- <div class="menu"> -->
-                <li class="indexOne"><a href="index.html">HOME</a></li>
-                <li class="aboutOne"><a href="#bodyThree">ABOUT ME</a></li>
-                <li class="skillsOne"><a href="#bodyFive">SKILLS</a></li>
-                <li class="portoOne"><a href="#bodySix">PORTOFOLIO</a></li>
-                <li class="blogOne"><a href="#bodySeven">BLOGS</a></li>
-                <li class="cont"><a href="#bodyFour">CONTACT ME</a></li>
-                <!-- </div> -->
-
-            </ul>
-            </nav>
+    <form>
+        <div class="author">
+            <p>Passion is Everything</p>
+            <p>Author Innocente</p>
+            <p> published on 22/12/2021</p>
         </div>
 
-        <div class="header"><label for="logo" class="logo">
-                <p class="name">Innocente Gihozo </p>
-                <p class="nameOne"> Junior software developer</p>
-            </label>
-        </div>
-    </div>
+        <label for="title">TITLE<textarea name="" id="" cols="180" rows="2"></textarea></label>
+        <label for="title">AUTHOR<textarea name="" id="" cols="180" rows="2"></textarea></label>
+        <label for="title">STORY<textarea name="" id="" cols="180" rows="5"></textarea></label>
+        <button>UPDATE</button>
+    </form>
+
+    <table id="tableOne">
+        <tr>
+            <th>USER</th>
+            <th>EMAIL</th>
+            <th>TITLE</th>
+            <th>PUBLISHED DATE</th>
+            <th>DO IT</th>
+
+        </tr>
+
+        <tr>
+            <th>Innocente</th>
+            <th>igihozoinnocente@gmail.com</th>
+            <th>Passion is everything</th>
+            <th>22/12/2021</th>
+            <th>
+                <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>Innocente</th>
+            <th>igihozoinnocente@gmail.com</th>
+            <th>Making your Day Successful</th>
+            <th>15/12/2021</th>
+            <th>
+                <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>Innocente</th>
+            <th>igihozoinnocente@gmail.com</th>
+            <th>Thinking Positively</th>
+            <th>10/12/2021</th>
+            <th>
+                <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
+            </th>
+        </tr>
+
+
+
+
+
+    </table>
+
+
+
+    <footer>
+        <p>LOGOUT</p>
+    </footer>
 
 </body>
 
