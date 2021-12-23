@@ -8,94 +8,146 @@
     <link rel="stylesheet" href="../CSS/admin.css">
     <title>ADMIN PANEL</title>
     <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
+    <div id="Admin-home">
 
-
-    <nav class="navbar">
-        <div class="logo">
-            <p>Innocente Gihozo</p>
-        </div>
-        <ul class="nav-links">
-            <!-- USING CHECKBOX HACK -->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="admin-panel">&#9776;</label>
-            <div class="menu">
-                <li><a href="#">WRITE</a></li>
-                <li><a href="#">MANAGE</a></li>
-                <li><a href="#">SETTING</a></li>
-                <li><a href="#">USER</a></li>
+        <nav class="navbar">
+            <div class="logo">
+                <p>Innocente Gihozo</p>
             </div>
-        </ul>
-    </nav>
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="admin-panel">&#9776;</label>
+                <div class="menu">
+                    <li><a href="#">WRITE</a></li>
+                    <li><a href="#">MANAGE</a></li>
+                    <li><a href="#user">BLOG</a></li>
+                    <li><a href="#">CONTACT ME</a></li>
+                </div>
+            </ul>
+        </nav>
 
-    <form>
-        <div class="author">
+        <form>
+            <!-- <div class="author">
             <p>Passion is Everything</p>
             <p>Author Innocente</p>
             <p> published on 22/12/2021</p>
-        </div>
-
-        <label for="title">TITLE<textarea name="" id="" cols="180" rows="2"></textarea></label>
-        <label for="title">AUTHOR<textarea name="" id="" cols="180" rows="2"></textarea></label>
-        <label for="title">STORY<textarea name="" id="" cols="180" rows="5"></textarea></label>
-        <button>UPDATE</button>
-    </form>
-
-    <table id="tableOne">
-        <tr>
-            <th>USER</th>
-            <th>EMAIL</th>
-            <th>TITLE</th>
-            <th>PUBLISHED DATE</th>
-            <th>DO IT</th>
-
-        </tr>
-
-        <tr>
-            <th>Innocente</th>
-            <th>igihozoinnocente@gmail.com</th>
-            <th>Passion is everything</th>
-            <th>22/12/2021</th>
-            <th>
-                <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
-            </th>
-        </tr>
-
-        <tr>
-            <th>Innocente</th>
-            <th>igihozoinnocente@gmail.com</th>
-            <th>Making your Day Successful</th>
-            <th>15/12/2021</th>
-            <th>
-                <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
-            </th>
-        </tr>
-
-        <tr>
-            <th>Innocente</th>
-            <th>igihozoinnocente@gmail.com</th>
-            <th>Thinking Positively</th>
-            <th>10/12/2021</th>
-            <th>
-                <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
-            </th>
-        </tr>
+        </div> -->
 
 
+            <label for="title" class="lbl">TITLE
+                <input type="text" name="title" required></label>
+            <!-- <label for="title">AUTHOR<textarea name="" id="" cols="100" rows="2"></textarea></label> -->
+            <label for="author" class="lbl">AUTHOR <input type="author" name="author"></label>
+            <label for="title" class="lbl">STORY<textarea name="" id="" cols="100" rows="7"
+                    class="story"></textarea></label>
+            <button class="btn">UPDATE</button>
+            <button class="btn">Attach file</button>
+
+        </form>
+
+        <table id="tableOne">
+            <tr>
+                <th>TITLE</th>
+                <th>PUBLISHED DATE</th>
+                <th>DO IT</th>
+                <th>VIEWS</th>
+                <th>THUMBS UP</th>
+                <th>THUMBS DOWN</th>
 
 
+            </tr>
 
-    </table>
+            <tr>
+                <!-- <th>Innocente</th> -->
+                <!-- <th>igihozoinnocente@gmail.com</th> -->
+                <th>PASSION IS EVERYTHING</th>
+                <th>22/12/2021</th>
+                <th>
+                    <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
+                </th>
+                <th>800</th>
+                <th>300</th>
+                <th>15</th>
+            </tr>
+
+            <tr>
+                <!-- <th>Innocente</th> -->
+                <!-- <th>igihozoinnocente@gmail.com</th> -->
+                <th>MAKING YOUR DAY PRODUCTIVE</th>
+                <th>15/12/2021</th>
+                <th>
+                    <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
+                </th>
+                <th>400</th>
+                <th>300</th>
+                <th>5</th>
+            </tr>
+
+            <tr>
+                <!-- <th>Innocente</th> -->
+                <!-- <th>igihozoinnocente@gmail.com</th> -->
+                <th>THINKING POSITIVELY</th>
+                <th>10/12/2021</th>
+                <th>
+                    <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
+                </th>
+                <th>700</th>
+                <th>500</th>
+                <th>12</th>
+            </tr>
+        </table>
+        <footer>
+            <p>LOGOUT</p>
+        </footer>
+    </div>
+    <!-- BLOG -->
+
+    <div id="user">
+        <section class="passion">
+            <h1>PASSION IS EVERYTHING</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Mollitia repellat inventore esse voluptas? Quo, eius amet natus ipsa
+                voluptate corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam voluptatibus hic
+                dolorem reiciendis eveniet. Vitae ex similique ipsa dicta adipisci, obcaecati repellendus culpa, facere
+                iure tempore nostrum! Iusto consequatur ea qui ipsam earum praesentium eius in ex, a repellat!<span>Read
+                    more...</span> <i class="fas fa-eye"></i> <i class="fas fa-thumbs-up"> </i> <i
+                    class="fas fa-thumbs-down"></i>
+            </p>
+        </section>
+        <section class="passion">
+            <h1>MAKING YOUR DAY PRODUCTIVE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Mollitia repellat inventore esse voluptas? Quo, eius amet natus ipsa
+                voluptate corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam voluptatibus hic
+                dolorem reiciendis eveniet. Vitae ex similique ipsa dicta adipisci, obcaecati repellendus culpa, facere
+                iure tempore nostrum! Iusto consequatur ea qui ipsam earum praesentium eius in ex, a repellat!<span>Read
+                    more...</span> <i class="fas fa-eye"></i> <i class="fas fa-thumbs-up"> </i> <i
+                    class="fas fa-thumbs-down"></i>
+            </p>
+        </section>
+        <section class="passion">
+            <h1>THINKING POSITIVELY</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Mollitia repellat inventore esse voluptas? Quo, eius amet natus ipsa
+                voluptate corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam voluptatibus hic
+                dolorem reiciendis eveniet. Vitae ex similique ipsa dicta adipisci, obcaecati repellendus culpa, facere
+                iure tempore nostrum! Iusto consequatur ea qui ipsam earum praesentium eius in ex, a repellat!<span>Read
+                    more...</span> <i class="fas fa-eye"></i> <i class="fas fa-thumbs-up"> </i> <i
+                    class="fas fa-thumbs-down"></i>
+            </p>
+        </section>
 
 
-
-    <footer>
-        <p>LOGOUT</p>
-    </footer>
-
+    </div>
 </body>
 
 </html>
