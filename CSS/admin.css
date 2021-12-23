@@ -51,7 +51,7 @@ input[type="checkbox"] {
   display: none;
 }
 /*HAMBURGER MENU*/
-.hamburger {
+.admin-panel {
   display: none;
   font-size: 24px;
   user-select: none;
@@ -127,7 +127,7 @@ footer p {
   input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
-  .hamburger {
+  .admin-panel {
     display: block;
   }
 }
