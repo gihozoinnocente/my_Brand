@@ -20,6 +20,7 @@
 
         <nav class="navbar">
             <div class="logo">
+                <!-- <img src="../Image/profile.JPG" alt=""> -->
                 <p>Innocente Gihozo</p>
             </div>
             <ul class="nav-links">
@@ -27,127 +28,160 @@
                 <input type="checkbox" id="checkbox_toggle" />
                 <label for="checkbox_toggle" class="admin-panel">&#9776;</label>
                 <div class="menu">
-                    <li><a href="#">WRITE</a></li>
-                    <li><a href="#">MANAGE</a></li>
-                    <li><a href="#user">BLOG</a></li>
-                    <li><a href="#">CONTACT ME</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#newArticle">NEW ARTICLE</a></li>
+                    <!-- <li><a href="#">BLOG</a></li> -->
+                    <!-- <li><a href="#user">BLOG</a></li> -->
+                    <li><a href="#queries">CONTACT ME</a></li>
+                    <li><a href="#settings">SETTINGS</a></li>
+                    <li><a href="#">LOGOUT</a></li>
                 </div>
             </ul>
         </nav>
 
-        <form>
-            <!-- <div class="author">
-            <p>Passion is Everything</p>
-            <p>Author Innocente</p>
-            <p> published on 22/12/2021</p>
-        </div> -->
+
+        <div class="blog-admin">
+            <table id="tableOne">
+                <tr>
+                    <th>TITLE</th>
+                    <th>PUBLISHED DATE</th>
+                    <th>DO IT</th>
+                    <th>VIEWS</th>
+                    <th>THUMBS UP</th>
+                    <th>THUMBS DOWN</th>
 
 
+                </tr>
+
+                <tr>
+                    <!-- <th>Innocente</th> -->
+                    <!-- <th>igihozoinnocente@gmail.com</th> -->
+                    <th>PASSION IS EVERYTHING</th>
+                    <th>22/12/2021</th>
+                    <th>
+                        <p> <a href="#newArticle">EDIT</a> | <i class="far fa-trash-alt"></i> DELETE</p>
+                    </th>
+                    <th>800</th>
+                    <th>300</th>
+                    <th>15</th>
+                </tr>
+
+                <tr>
+                    <!-- <th>Innocente</th> -->
+                    <!-- <th>igihozoinnocente@gmail.com</th> -->
+                    <th>MAKING YOUR DAY PRODUCTIVE</th>
+                    <th>15/12/2021</th>
+                    <th>
+                        <p><a href="#newArticle">EDIT</a> | <i class="far fa-trash-alt"></i> DELETE</p>
+                    </th>
+                    <th>400</th>
+                    <th>300</th>
+                    <th>5</th>
+                </tr>
+
+                <tr>
+                    <!-- <th>Innocente</th> -->
+                    <!-- <th>igihozoinnocente@gmail.com</th> -->
+                    <th>THINKING POSITIVELY</th>
+                    <th>10/12/2021</th>
+                    <th>
+                        <p><a href="#newArticle">EDIT</a> | <i class="far fa-trash-alt"></i> DELETE</p>
+                    </th>
+                    <th>700</th>
+                    <th>500</th>
+                    <th>12</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="newArticle">
+        <form class="write">
             <label for="title" class="lbl">TITLE
                 <input type="text" name="title" required></label>
             <!-- <label for="title">AUTHOR<textarea name="" id="" cols="100" rows="2"></textarea></label> -->
             <label for="author" class="lbl">AUTHOR <input type="author" name="author"></label>
-            <label for="title" class="lbl">STORY<textarea name="" id="" cols="100" rows="7"
-                    class="story"></textarea></label>
-            <button class="btn">UPDATE</button>
+            <label for="article" class="lbl">STORY<input type="message" name="message"></label>
+            </br>
+            <label for="date" class="date">Publish date <input type="date" value="2021-12-23" min="2018-01-01"
+                    max="2021-12-23"></label>
+
+
+
+            <button class="btn" style="color: white;background-color: red;">UPDATE</button>
             <button class="btn">Attach file</button>
 
         </form>
-
-        <table id="tableOne">
-            <tr>
-                <th>TITLE</th>
-                <th>PUBLISHED DATE</th>
-                <th>DO IT</th>
-                <th>VIEWS</th>
-                <th>THUMBS UP</th>
-                <th>THUMBS DOWN</th>
-
-
-            </tr>
-
-            <tr>
-                <!-- <th>Innocente</th> -->
-                <!-- <th>igihozoinnocente@gmail.com</th> -->
-                <th>PASSION IS EVERYTHING</th>
-                <th>22/12/2021</th>
-                <th>
-                    <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
-                </th>
-                <th>800</th>
-                <th>300</th>
-                <th>15</th>
-            </tr>
-
-            <tr>
-                <!-- <th>Innocente</th> -->
-                <!-- <th>igihozoinnocente@gmail.com</th> -->
-                <th>MAKING YOUR DAY PRODUCTIVE</th>
-                <th>15/12/2021</th>
-                <th>
-                    <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
-                </th>
-                <th>400</th>
-                <th>300</th>
-                <th>5</th>
-            </tr>
-
-            <tr>
-                <!-- <th>Innocente</th> -->
-                <!-- <th>igihozoinnocente@gmail.com</th> -->
-                <th>THINKING POSITIVELY</th>
-                <th>10/12/2021</th>
-                <th>
-                    <p>EDIT | <i class="far fa-trash-alt"></i> DELETE</p>
-                </th>
-                <th>700</th>
-                <th>500</th>
-                <th>12</th>
-            </tr>
-        </table>
-        <footer>
-            <p>LOGOUT</p>
-        </footer>
     </div>
-    <!-- BLOG -->
-
-    <div id="user">
-        <section class="passion">
-            <h1>PASSION IS EVERYTHING</h1>
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Mollitia repellat inventore esse voluptas? Quo, eius amet natus ipsa
-                voluptate corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam voluptatibus hic
-                dolorem reiciendis eveniet. Vitae ex similique ipsa dicta adipisci, obcaecati repellendus culpa, facere
-                iure tempore nostrum! Iusto consequatur ea qui ipsam earum praesentium eius in ex, a repellat!<span>Read
-                    more...</span> <i class="fas fa-eye"></i> <i class="fas fa-thumbs-up"> </i> <i
-                    class="fas fa-thumbs-down"></i>
-            </p>
-        </section>
-        <section class="passion">
-            <h1>MAKING YOUR DAY PRODUCTIVE</h1>
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Mollitia repellat inventore esse voluptas? Quo, eius amet natus ipsa
-                voluptate corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam voluptatibus hic
-                dolorem reiciendis eveniet. Vitae ex similique ipsa dicta adipisci, obcaecati repellendus culpa, facere
-                iure tempore nostrum! Iusto consequatur ea qui ipsam earum praesentium eius in ex, a repellat!<span>Read
-                    more...</span> <i class="fas fa-eye"></i> <i class="fas fa-thumbs-up"> </i> <i
-                    class="fas fa-thumbs-down"></i>
-            </p>
-        </section>
-        <section class="passion">
-            <h1>THINKING POSITIVELY</h1>
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Mollitia repellat inventore esse voluptas? Quo, eius amet natus ipsa
-                voluptate corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam voluptatibus hic
-                dolorem reiciendis eveniet. Vitae ex similique ipsa dicta adipisci, obcaecati repellendus culpa, facere
-                iure tempore nostrum! Iusto consequatur ea qui ipsam earum praesentium eius in ex, a repellat!<span>Read
-                    more...</span> <i class="fas fa-eye"></i> <i class="fas fa-thumbs-up"> </i> <i
-                    class="fas fa-thumbs-down"></i>
-            </p>
-        </section>
 
 
+    <div id="settings">
+        <img class="profile" src="../Image/profile.JPG">
+        <p class="form-profile">change profile picture</p>
+
+        <form class="form-setting">
+            <p class="form-text">Username</p><input type="pswd" name="message">
+            <p class="form-text">Email</p><input type="pswd" name="message">
+            <p class="form-text">Password</p><input type="pswd" name="message">
+            <p class="form-text">New Password</p><input type="pswd" name="message">
+            <button class="btn-setting">SEND</button>
+        </form>
     </div>
+
+
+
+
+    <div id="queries">
+        <div class="query">
+            <h4>
+                Innocente Gihozo
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi corporis cupiditate dolor
+                ducimus
+                earum eveniet excepturi in, incidunt magni mollitia pariatur provident, quasi quod reiciendis
+                repudiandae veritatis vero voluptates!
+            </p>
+            <span>igihozoinnocente@gmail.com</span>
+        </div>
+        <div class="query">
+            <h4>
+                Innocente Gihozo
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi corporis cupiditate dolor
+                ducimus
+                earum eveniet excepturi in, incidunt magni mollitia pariatur provident, quasi quod reiciendis
+                repudiandae veritatis vero voluptates!
+            </p>
+            <span>igihozoinnocente@gmai.com</span>
+        </div>
+        <div class="query">
+            <h4>
+                GIHOZO INNOCENTE
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi corporis cupiditate dolor
+                ducimus
+                earum eveniet excepturi in, incidunt magni mollitia pariatur provident, quasi quod reiciendis
+                repudiandae veritatis vero voluptates!
+            </p>
+            <span>igihozoinnocente@gmail.com</span>
+        </div>
+        <div class="query">
+            <h4>
+                GIHOZO INNOCENTE
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi corporis cupiditate dolor
+                ducimus
+                earum eveniet excepturi in, incidunt magni mollitia pariatur provident, quasi quod reiciendis
+                repudiandae veritatis vero voluptates!
+            </p>
+            <span>igihozoinnocente@gmail.com</span>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

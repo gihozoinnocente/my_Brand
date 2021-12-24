@@ -6,7 +6,8 @@
   list-style: none;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
@@ -117,7 +118,7 @@ nav a {
   margin-right: 50px;
   line-height: 20px;
   margin-top: 100px;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 
 /* PORTOFOLIO */
@@ -136,11 +137,12 @@ nav a {
   padding-left: 50px;
   font-size: 30px;
 }
-img {
-  height: 100px;
-  width: 150px;
+.skillsTwo {
+  height: 200px;
+  width: 300px;
   padding-left: 50px;
   padding-right: 30px;
+  padding-top: 5px;
 }
 h1 {
   padding-left: 100px;
@@ -171,7 +173,8 @@ h1 {
   border: 1px solid;
   height: 100%;
   width: 40%;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   border-radius: 5%;
   margin-left: 10%;
 }
@@ -179,7 +182,8 @@ h1 {
 .portoThree {
   border: 1px solid;
   width: 40%;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   border-radius: 5%;
   margin-left: 50px;
 }
@@ -233,8 +237,27 @@ h1 {
   padding: 10px;
 }
 .btm {
-  margin-left: 70px;
+  margin-left: 60px;
+  background-color: #04aa6d;
+  color: white;
+  height: 30px;
+  font-size: 15px;
 }
+
+.img-blog {
+  height: 200px;
+  width: 230px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 5px;
+}
+/* .img-blog{
+  height: 200px;
+  width: 300px;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 5px;
+} */
 /* 
 .blogOne {
   height: 45%;
