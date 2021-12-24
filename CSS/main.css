@@ -6,7 +6,8 @@
   list-style: none;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
@@ -74,6 +75,9 @@ nav a {
 .cont {
   margin-left: 30px;
 }
+.log {
+  margin-left: 50px;
+}
 #bodyTwo {
   color: whitesmoke;
   background-image: url("../Image/image1.jpeg");
@@ -114,7 +118,7 @@ nav a {
   margin-right: 50px;
   line-height: 20px;
   margin-top: 100px;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
 }
 
 /* PORTOFOLIO */
@@ -133,11 +137,12 @@ nav a {
   padding-left: 50px;
   font-size: 30px;
 }
-img {
-  height: 100px;
-  width: 150px;
+.skillsTwo {
+  height: 200px;
+  width: 300px;
   padding-left: 50px;
   padding-right: 30px;
+  padding-top: 5px;
 }
 h1 {
   padding-left: 100px;
@@ -168,7 +173,8 @@ h1 {
   border: 1px solid;
   height: 100%;
   width: 40%;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   border-radius: 5%;
   margin-left: 10%;
 }
@@ -176,7 +182,8 @@ h1 {
 .portoThree {
   border: 1px solid;
   width: 40%;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   border-radius: 5%;
   margin-left: 50px;
 }
@@ -192,11 +199,26 @@ h1 {
 }
 /* BLOG */
 #bodySeven {
-  margin-left: 15%;
+  margin-left: 0%;
   height: 100vh;
 }
 
-#blog {
+.blogGen {
+  display: flex;
+
+  justify-content: space-around;
+  padding: 20px;
+  padding-top: 100px;
+  padding-right: 40px;
+}
+.blogGen section {
+  width: 240px;
+  height: 400px;
+
+  box-shadow: 30px;
+  border: 1px solid blue;
+}
+#blogs {
   color: #fff;
   background-color: #04aa6d;
   padding-top: 40px;
@@ -205,8 +227,74 @@ h1 {
   height: 100px;
 }
 
+.blog-title {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.blog-text {
+  padding: 10px;
+}
+.btm {
+  margin-left: 60px;
+  background-color: #04aa6d;
+  color: white;
+  height: 30px;
+  font-size: 15px;
+}
+
+.img-blog {
+  height: 200px;
+  width: 230px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 5px;
+}
+/* .img-blog{
+  height: 200px;
+  width: 300px;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 5px;
+} */
+/* 
+.blogOne {
+  height: 45%;
+  width: 20%;
+  border: 1px black solid;
+  box-shadow: 10px;
+  margin: 30px;
+  border-radius: 10%;
+  padding: 40px;
+}
+.blogTwo {
+  height: 45%;
+  width: 20%;
+  border: 1px solid;
+  margin: 30px;
+  border-radius: 10%;
+  padding: 40px;
+}
+.blogThree {
+  height: 45%;
+  width: 20%;
+  border: 1px solid;
+  margin: 30px;
+  border-radius: 10%;
+  padding: 40px;
+}
+.blogFour {
+  height: 45%;
+  width: 20%;
+  border: 1px solid;
+  margin: 30px;
+  border-radius: 10%;
+  padding: 40px;
+} */
+
 #bodyFour {
-  margin-left: 15%;
+  margin-left: 0%;
   height: 100vh;
 }
 #contact {
@@ -402,6 +490,46 @@ h1 {
     display: block;
   }
 
+  #bodySeven {
+    height: 100%;
+  }
+  .blogGen {
+    display: block;
+  }
+
+  .blogOne {
+    height: 15%;
+    width: 90%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 5%;
+    padding: 10px;
+  }
+  .blogTwo {
+    height: 15%;
+    width: 90%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 5%;
+    padding: 10px;
+  }
+
+  .blogThree {
+    height: 15%;
+    width: 90%;
+    border: 1px solid;
+    margin: 30px;
+    border-radius: 5%;
+    padding: 10px;
+  }
+  .blogFour {
+    height: 15%;
+    width: 90%;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 5%;
+    padding: 10px;
+  }
   #bodyFour {
     margin-left: 0px;
   }
