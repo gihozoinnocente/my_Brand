@@ -45,7 +45,7 @@
             </nav>
         </div>
         <div id="bodyTwo">
-            <p>I want to make things</br> that makes a difference</p>
+            <!-- <p>I want to make things</br> that makes a difference</p> -->
         </div>
     </div>
     <div id="bodyThree">
@@ -78,7 +78,7 @@
             <div class="portoTwo">
                 <div> <img class="web" src="./Image/web.jpeg" alt=""></div>
                 <div>
-                    <h1>WEB DEVELOPMENT</h1>
+                    <h1 class="porto-title">WEB DEVELOPMENT</h1>
                     <p class="portoFive">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Fugiat, similique veritatis quibusdam deleniti dolore soluta maxime ea corrupti
                         perferendis voluptatum! <span class="portoSix">Read more...</span></p>
@@ -88,7 +88,7 @@
             <div class="portoThree">
                 <div><img class="web" src="./Image/web1.jpeg" alt=""></div>
                 <div>
-                    <h1>WEB APPLICATION</h1>
+                    <h1 class="porto-title">WEB APPLICATION</h1>
                     <p class="portoFive">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Fugiat, similique veritatis quibusdam deleniti dolore soluta maxime ea corrupti
                         perferendis voluptatum! <span class="portoSix">Read more...</span></p>
@@ -161,13 +161,23 @@
                     </nav>
                 </div>
                 <div class="navbarTwo">
-                    <label>
+
+                    <form>
+                        <p>Leave comment here</p>
+                        <label for="comment"> <input type="text" placeholder="leave your comment here"></label>
+                        <label for="name"><input type="name" placeholder="Name" required></label>
+                        <label for="email"><input type="email" placeholder="Email" required></label>
+                        <button class="send-blog">SEND</button>
+                    </form>
+
+
+                    <!-- <label>
                         <textarea class="postTitle" name=" title" rows="2" cols="40" placeholder="NAME"></textarea>
                         <textarea class="postTitle" name=" title" rows="2" cols="40" placeholder="Email"></textarea>
                         <textarea name=" description" rows="10" cols="40" placeholder="MESSAGE"></textarea>
                     </label>
                     <br>
-                    <button type="button" class="btn">SEND</button>
+                    <button type="button" class="btn">SEND</button> -->
                 </div>
             </div>
         </div>
