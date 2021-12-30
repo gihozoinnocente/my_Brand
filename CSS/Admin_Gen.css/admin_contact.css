@@ -172,49 +172,23 @@ nav a {
     display: inline-flex;
   }
 
-  #settings {
-    height: 100vh;
-  }
-  .profile {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-left: 40%;
-    margin-top: 70px;
-  }
-  .lbt {
-    margin-left: 500px;
-  }
-
-  .form-text {
-    padding-left: 20%;
-  }
-  input[type="pswd"] {
-    height: 30px;
-    width: 250px;
-    margin-left: 10%;
-  }
-
-  .form-setting {
-    width: 300px;
-    height: 300px;
-    margin-left: 10%;
+  #queries {
     margin-top: 50px;
-    padding-top: 20px;
+    padding: 50px;
+    height: 100vh;
+    width: 70vw;
+    background-color: beige;
   }
 
-  .btn-setting {
-    color: white;
-    background-color: red;
-    box-shadow: none;
-    margin-left: 35%;
-    margin-top: 20px;
-    height: 30px;
-    width: 100px;
-  }
-
-  .form-profile {
-    margin-left: 0px;
+  .query {
+    height: auto;
+    width: 80%;
+    background-color: white;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 2.5rem;
+    margin-bottom: 30px;
+    padding: 3px;
   }
 }
 
@@ -245,5 +219,15 @@ nav a {
 
   .hamburger {
     display: block;
+  }
+  .query {
+    height: auto;
+    width: 80%;
+    background-color: white;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 2.5rem;
+    margin-bottom: 30px;
+    padding: 3px;
   }
 }
