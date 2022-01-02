@@ -46,6 +46,10 @@ img {
   display: inline-flex;
 }
 
+#menuhor li {
+  padding-left: 10px;
+}
+
 .nav-links a {
   color: white;
   padding-left: 2.5rem;

@@ -159,6 +159,7 @@ nav a {
     margin-left: 0vw;
     height: 100vh;
     width: 100vw;
+    margin-top: -15%;
   }
 
   #menuhor {
@@ -182,7 +183,7 @@ nav a {
 
   .query {
     height: auto;
-    width: 80%;
+    width: 85%;
     background-color: white;
     margin-left: 0%;
     margin-right: 0%;
