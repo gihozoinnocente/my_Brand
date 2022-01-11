@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/admin.css">
+    <title>ADMIN PANEL</title>
+    <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="Admin-home">
+
+        <nav class="navbar">
+            <div class="logo">
+                <!-- <img src="../Image/profile.JPG" alt=""> -->
+                <p>Innocente Gihozo</p>
+            </div>
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="admin-panel">&#9776;</label>
+                <div class="menu">
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#newArticle">NEW ARTICLE</a></li>
+                    <!-- <li><a href="#">BLOG</a></li> -->
+                    <!-- <li><a href="#user">BLOG</a></li> -->
+                    <li><a href="#queries">CONTACT ME</a></li>
+                    <li><a href="#settings">SETTINGS</a></li>
+                    <li><a href="#">LOGOUT</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="blog-admin">
+            <table id="tableOne">
+                <tr>
+                    <th>TITLE</th>
+                    <th>PUBLISHED DATE</th>
+                    <th>DO IT</th>
+                    <th>VIEWS</th>
+                    <th>THUMBS UP</th>
+                    <th>THUMBS DOWN</th>
+
+
+                </tr>
+
+                <tr>
+                    <!-- <th>Innocente</th> -->
+                    <!-- <th>igihozoinnocente@gmail.com</th> -->
+                    <th>PASSION IS EVERYTHING</th>
+                    <th>22/12/2021</th>
+                    <th>
+                        <p> <a href="#newArticle">EDIT</a> | <i class="far fa-trash-alt"></i> DELETE</p>
+                    </th>
+                    <th>800</th>
+                    <th>300</th>
+                    <th>15</th>
+                </tr>
+
+                <tr>
+                    <!-- <th>Innocente</th> -->
+                    <!-- <th>igihozoinnocente@gmail.com</th> -->
+                    <th>MAKING YOUR DAY PRODUCTIVE</th>
+                    <th>15/12/2021</th>
+                    <th>
+                        <p><a href="#newArticle">EDIT</a> | <i class="far fa-trash-alt"></i> DELETE</p>
+                    </th>
+                    <th>400</th>
+                    <th>300</th>
+                    <th>5</th>
+                </tr>
+
+                <tr>
+                    <!-- <th>Innocente</th> -->
+                    <!-- <th>igihozoinnocente@gmail.com</th> -->
+                    <th>THINKING POSITIVELY</th>
+                    <th>10/12/2021</th>
+                    <th>
+                        <p><a href="#newArticle">EDIT</a> | <i class="far fa-trash-alt"></i> DELETE</p>
+                    </th>
+                    <th>700</th>
+                    <th>500</th>
+                    <th>12</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="newArticle">
+        <form class="write">
+            <label for="title" class="lbl">TITLE
+                <input type="text" name="title" required></label>
+            <!-- <label for="title">AUTHOR<textarea name="" id="" cols="100" rows="2"></textarea></label> -->
+            <label for="author" class="lbl">AUTHOR <input type="author" name="author"></label>
+            <label for="article" class="lbl">STORY<input type="message" name="message"></label>
+            </br>
+            <label for="date" class="date">Publish date <input type="date" value="2021-12-23" min="2018-01-01"
+                    max="2021-12-23"></label>
+
+
+
+            <button class="btn" style="color: white;background-color: red;">UPDATE</button>
+            <button class="btn">Attach file</button>
+
+        </form>
+    </div>
+
+
+    <div id="settings">
+        <img class="profile" src="../Image/profile.JPG">
+        <p class="form-profile">change profile picture</p>
+
+        <form class="form-setting">
+            <p class="form-text">Username</p><input type="pswd" name="message">
+            <p class="form-text">Email</p><input type="pswd" name="message">
+            <p class="form-text">Password</p><input type="pswd" name="message">
+            <p class="form-text">New Password</p><input type="pswd" name="message">
+            <button class="btn-setting">SEND</button>
+        </form>
+    </div>
+
+
+
+
+    <div id="queries">
+        <div class="query">
+            <h4>
+                Innocente Gihozo
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi corporis cupiditate dolor
+                ducimus
+                earum eveniet excepturi in, incidunt magni mollitia pariatur provident, quasi quod reiciendis
+                repudiandae veritatis vero voluptates!
+            </p>
+            <span>igihozoinnocente@gmail.com</span>
+        </div>
+        <div class="query">
+            <h4>
+                Innocente Gihozo
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi corporis cupiditate dolor
+                ducimus
+                earum eveniet excepturi in, incidunt magni mollitia pariatur provident, quasi quod reiciendis
+                repudiandae veritatis vero voluptates!
+            </p>
+            <span>igihozoinnocente@gmai.com</span>
+        </div>
+        <div class="query">
+            <h4>
+                GIHOZO INNOCENTE
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi corporis cupiditate dolor
+                ducimus
+                earum eveniet excepturi in, incidunt magni mollitia pariatur provident, quasi quod reiciendis
+                repudiandae veritatis vero voluptates!
+            </p>
+            <span>igihozoinnocente@gmail.com</span>
+        </div>
+        <div class="query">
+            <h4>
+                GIHOZO INNOCENTE
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi corporis cupiditate dolor
+                ducimus
+                earum eveniet excepturi in, incidunt magni mollitia pariatur provident, quasi quod reiciendis
+                repudiandae veritatis vero voluptates!
+            </p>
+            <span>igihozoinnocente@gmail.com</span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
