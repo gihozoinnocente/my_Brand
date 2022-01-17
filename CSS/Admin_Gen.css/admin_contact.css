@@ -133,6 +133,11 @@ nav a {
   padding: 3px;
 }
 
+.queryHeader {
+  width: 10%;
+  font-size: 20px;
+}
+
 @media (min-width: 100px) and (max-width: 480px) {
   #home {
     display: inline-block;

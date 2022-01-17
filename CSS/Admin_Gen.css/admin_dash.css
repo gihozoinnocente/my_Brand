@@ -113,6 +113,20 @@ input[type="checkbox"] {
   color: black;
 }
 
+.blogOne {
+  height: 45%;
+  width: 80%;
+  border: 1px black solid;
+  box-shadow: 10px;
+  margin: 30px;
+  border-radius: 0%;
+  padding: 40px;
+}
+
+.blog-title {
+  width: 100%;
+  color: red;
+}
 @media (min-width: 100px) and (max-width: 480px) {
   #home {
     display: inline-block;

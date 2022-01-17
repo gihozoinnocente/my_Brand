@@ -78,6 +78,24 @@ input[type="checkbox"] {
   height: 50px;
 }
 
+#username_error {
+  color: red;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-bottom: 5%;
+  /* background-color: rgba(255, 0, 0, 0.1); */
+  width: 50%;
+  display: none;
+  /* padding-top: 2%; */
+}
+#pass_error {
+  color: red;
+  padding-left: 25%;
+  padding-bottom: 5%;
+  display: none;
+  /* padding-top: 2%; */
+}
+
 @media (max-width: 480px) {
   body {
     background-color: none;

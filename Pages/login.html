@@ -7,28 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/login.css">
     <title>LOGIN</title>
+    <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <div id="login-Page">
-        <form class="loginOne">
+        <form class="loginOne" method="post" name="form" id="form" onsubmit="return validated()">
             <p class="login">LOGIN</p>
 
             <label class="lbl" for="username">Username</label>
-            <input type="text" placeholder="Enter Username" name="username">
+            <input type="text" placeholder="Enter Username" name="username" id="username">
+            <div id="username_error"><i class="fas fa-exclamation-triangle"></i>Please enter a valid username</div>
 
             <label class="password" for="password">Password</label>
-            <input type="text" placeholder="Password" name="username">
+            <input type="text" placeholder="Password" name="password" id="pass">
+            <div id="pass_error"><i class="fas fa-exclamation-triangle"></i>Please enter a valid password</div>
+
 
 
             <label><input type="checkbox" checked="checked" name="remember">Rember me</label>
-            <button class="btn" type="submit"> <a href="/Pages/Admin_Gen.html/admin_dash.html"> LOGIN</button></a>
+            <button id="btn" type="submit">
+                <!-- <a href="/Pages/Admin_Gen.html/admin_dash.html"> -->
+                LOGIN
+            </button>
+            <!-- </a> -->
             <!-- <div>
                 <span class="passwordOne">Forgot Password</span>
             </div> -->
         </form>
 
     </div>
+    <script src="/JS/login.js"></script>
 </body>
 
 </html>
