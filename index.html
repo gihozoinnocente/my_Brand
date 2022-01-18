@@ -168,13 +168,13 @@
                     </div>
                     <div class="navbarTwo">
 
-                        <form id="contactForm">
+                        <form id="contactForm" method="POST">
                             <p>Leave comment here</p>
                             <label for="comment"> <input type="text" placeholder="leave your comment here"
                                     name="text"></label>
                             <label for="name"><input type="name" placeholder="Name" required name="name"></label>
                             <label for="email"><input type="email" placeholder="Email" name="email" required></label>
-                            <button class="send-blog" id="btn">SEND</button>
+                            <button class="send-blog" type="submit" id="btn">SEND</button>
                         </form>
                         <div id="queries" class="queries"></div>
                     </div>
@@ -182,7 +182,7 @@
             </div>
             </main>
 
-
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
             <script src="./JS/qon.js"></script>
             <script src="./JS/blogUser.js"></script>
             <script src="./JS/dashboard.js"></script>

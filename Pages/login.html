@@ -12,29 +12,16 @@
 </head>
 
 <body>
-    <div id="login-Page">
-        <form class="loginOne" method="post" name="form" id="form" onsubmit="return validated()">
-            <p class="login">LOGIN</p>
-
-            <label class="lbl" for="username">Username</label>
-            <input type="text" placeholder="Enter Username" name="username" id="username">
-            <div id="username_error"><i class="fas fa-exclamation-triangle"></i>Please enter a valid username</div>
-
-            <label class="password" for="password">Password</label>
-            <input type="text" placeholder="Password" name="password" id="pass">
-            <div id="pass_error"><i class="fas fa-exclamation-triangle"></i>Please enter a valid password</div>
-
-
-
-            <label><input type="checkbox" checked="checked" name="remember">Rember me</label>
-            <button id="btn" type="submit">
-                <!-- <a href="/Pages/Admin_Gen.html/admin_dash.html"> -->
+    <div id="login-container">
+        <a href="/"> <--Go back to home</a>
+        <form id="loginForm" method="POST">
+            <h3 class="login">LOGIN AS ADMIN</h3>
+            <input class="loginInputs" type="text" placeholder="Username or email" name="email" id="usernameInput"><br/>
+            <input class="loginInputs" type="password" placeholder="Password" name="password" id="passwordInput"><br/>
+            <span id="loginError" style="display: none; color: brown;">Invalid credentials</span> <br/>
+            <button id="loginButton" type="submit">
                 LOGIN
             </button>
-            <!-- </a> -->
-            <!-- <div>
-                <span class="passwordOne">Forgot Password</span>
-            </div> -->
         </form>
 
     </div>
