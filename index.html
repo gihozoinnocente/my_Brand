@@ -14,189 +14,159 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Open+Sans:wght@300&display=swap"
         rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+    />
 </head>
 
 <body>
-    <div class="container">
-        <div id="bodyOne">
-            <nav class="fixed" class="navbar">
-                <div class="containerOne">
-                    <div class="header">
-                        <label for="logo" class="logo">
-                            <p class="name">Innocente Gihozo </p>
-                            <p class="nameOne"> Junior software developer</p>
-                        </label>
-                    </div>
+    <div class="body-container">
+        <!-- Side nav -->
+        <div class="side-nav">
+            <nav class="navbar">
+                <div class="header status">
+                    <h3 class="my-name">Innocente Gihozo </h3>
+                    <span class="spanosition"> Junior software developer</span>
                 </div>
-                <div id="bars">
-                    <ul class="logo1" class="nav-links">
-                        <input type="checkbox" id="checkbox_toggle" />
-                        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                        <div class="menu">
-                            <li class="indexOne"><a href="index.html">HOME</a></li>
-                            <li class="aboutOne"><a href="#bodyThree">ABOUT ME</a></li>
-                            <li class="skillsOne"><a href="#bodyFive">SKILLS</a></li>
-                            <li class="portoOne"><a href="#bodySix">PORTOFOLIO</a></li>
-                            <li class="blogOne"><a href="#bodySeven">BLOGS</a></li>
-                            <li class="cont"><a href="#bodyFour">CONTACT ME</a></li>
-                            <li class="log"><a href="Pages/login.html">LOGIN</a></li>
-                        </div>
-
-                    </ul>
-                </div>
+                <ul class="nav-list">
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <li class="nav-link"><a href="#aboutme">About me</a></li>
+                    <li class="nav-link"><a href="#skills">Skills</a></li>
+                    <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-link"><a href="blog.html">Blog</a></li>
+                    <li class="nav-link"><a href="#contactme">Contact me</a></li>
+                    <li class="nav-link"><a href="Pages/login.html">Login</a></li>
+                </ul>
             </nav>
         </div>
-        <div id="bodyTwo">
-            <!-- <img class="pic" src="./Image/New cover.jpeg"> -->
-            <!-- <p>I want to make things</br> that makes a difference</p> -->
-        </div>
-    </div>
-    <div id="bodyThree">
-        <p id="about">ABOUT</p>
-        <p id="aboutText"> I'm a tech enthusiaty lady,a software loving career .I have 6 months experiences in software
-            development.The driving passion started back in 2020 where i was working as support agent in IT technical
-            assistant departement.I was very eager and started to learn the concept of software development.
-            </br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae provident ut illum a beatae,
-            soluta eveniet velit fugit itaque pariatur?</p>
-    </div>
-    <div id="bodyFive">
-        <p id="skills">SKILLS</p>
-        <!-- <h1>HTML</h1> -->
-        <img class="skillsTwo" src="./Image/CSS Image.png" alt="">
-        <!-- <h1>HTML</h1> -->
-
-        <img class="skillsTwo" src="./Image/HTML5 image.png">
-        <img class="skillsTwo" src="./Image/JSX image.png">
-        <br>
-        <!-- <h1>CSS</h1> -->
-        <!-- <img class="skillsTwo" src="./Image/css.jpeg" alt=""> -->
-        <br>
-        <!-- <h1>JAVASCRIPT</h1> -->
-        <img class="skillsTwo" src="./Image/React image.png" alt="">
-        <img class="skillsTwo" src="./Image/Javascript image.jpg" alt="">
-    </div>
-    <div id="bodySix">
-        <p id="porto">PORTOFOLIO</p>
-        <div class="portoFour">
-            <div class="portoTwo">
-                <div> <img class="web" src="./Image/web.jpeg" alt=""></div>
-                <div>
-                    <h1 class="porto-title">WEB DEVELOPMENT</h1>
-                    <p class="portoFive">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Fugiat, similique veritatis quibusdam deleniti dolore soluta maxime ea corrupti
-                        perferendis voluptatum! <span class="portoSix">Read more...</span></p>
+        <!-- Content -->
+        <div class="content">
+            <!-- image and attractive words -->
+            <div class="showcase">
+                <div class="image">
+                    <img src="/Image/profile.JPG" alt="profile" srcset="" class="profile">
                 </div>
-            </div>
-
-            <div class="portoThree">
-                <div><img class="web" src="./Image/web1.jpeg" alt=""></div>
-                <div>
-                    <h1 class="porto-title">WEB APPLICATION</h1>
-                    <p class="portoFive">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Fugiat, similique veritatis quibusdam deleniti dolore soluta maxime ea corrupti
-                        perferendis voluptatum! <span class="portoSix">Read more...</span></p>
-                </div>
-            </div>
-
-        </div>
-        <div id="bodySeven">
-            <p id="blogs">BLOG</p>
-            <div class="blogGen" id="articles" class="articles">
-
-                <!-- <div class="blogOne">
-                    <div>
-                        <input type="file" id="myFileInput">
-                        <img class="img-blog" src="./Image/Blog image.png"></div>
-                    <p class="blog-title">TECHNOLOGY IN RWANDA</p></br>
-                    <p class="blog-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, vel!
-                    <p> <i class="fas fa-eye" style="color: #04aa6d; margin-left: 10px;"></i> <i
-                            class="fas fa-thumbs-up" style="color: #04aa6d"> </i> <i class="fas fa-thumbs-down"
-                            style="color: #04aa6d"></i>
-                        <button class="btm"><a href="Pages/blog.html">Read
-                                more ...</a><button>
-                </div>
-                <section class="blogTwo">
-                    <div><img class="img-blog" src="./Image/web4.jpeg"></div>
-                    <p class="blog-title">TOP TEN WEB DESIGN TIPS </p></br>
-                    <p class="blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, fugiat!
-                    </p><i class="fas fa-eye" style="color: #04aa6d; margin-left: 10px;"></i> <i
-                        class="fas fa-thumbs-up" style="color: #04aa6d"> </i> <i class="fas fa-thumbs-down"
-                        style="color: #04aa6d"></i>
-                    <button class="btm"><a href="Pages/blog2.html">Read
-                            more ...</a></button>
-                </section>
-                <section class="blogThree">
-                    <div><img class="img-blog" src="./Image/girls in tech image.jpg"></div>
-                    <p class="blog-title">GIRLS IN TECH</p></br>
-                    <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam,
-                        voluptatem! </p> <i class="fas fa-eye" style="color: #04aa6d; margin-left: 10px;"></i> <i
-                        class="fas fa-thumbs-up" style="color: #04aa6d; "> </i> <i style="color: #04aa6d"
-                        class="fas fa-thumbs-down"></i>
-                    <button class="btm"><a href="Pages/blog3.html">Read
-                            more ...</a></button>
-                </section>
-                <section class="blogFour">
-                    <div><img class="img-blog" src="./Image/being-passionate.jpg"></div>
-                    <p class="blog-title">PASSION IS EVERYTHING</p></br>
-                    <p class="blog-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, iusto.
-                    </p> <i class="fas fa-eye" style="color: #04aa6d; margin-left: 10px;"></i> <i style="color: #04aa6d"
-                        class="fas fa-thumbs-up">
-                    </i> <i class="fas fa-thumbs-down" style="color: #04aa6d"></i>
-                    <button class="btm"><a href="Pages/blog3.html">Read
-                            more ...</a></button </section>
-            </div> -->
-
-            </div>
-            <div id="bodyFour">
-                <p id="contact">CONTACT</p>
-                <div id="contactOne">
-                    <div class="contactTwo">
-                        <p>KICUKIRO-KIGALI</p>
-                        <p>Email:igihozoinnocente@gmail.com</p>
-                        <p><i class="fas fa-phone-alt"></i>+250783742810</p>
-                        <nav class="navbarOne">
-                            <ul>
-                                <li><a href="https://www.facebook.com/people/GiGi-App/100074120617694/"
-                                        target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://twitter.com/home" target="_blank"><i
-                                            class="fab fa-twitter icon-1"></i></a>
-                                </li>
-                                <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i
-                                            class="fab fa-instagram icon-1"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="navbarTwo">
-
-                        <form id="contactForm" method="POST">
-                            <p>Leave comment here</p>
-                            <label for="comment"> <input type="text" placeholder="leave your comment here"
-                                    name="text"></label>
-                            <label for="name"><input type="name" placeholder="Name" required name="name"></label>
-                            <label for="email"><input type="email" placeholder="Email" name="email" required></label>
-                            <button class="send-blog" type="submit" id="btn">SEND</button>
+                <div class="beatifulwords">
+                    <p><i>
+                        “I have very personally felt the overwhelming loneliness, self-doubt, and frustration that often comes with the minority status of a woman in engineering. As much as I can help others get through or avoid those difficult stretches that I myself had to weather, I’d like to. As a bonus, the more women (and minorities) that enter and don’t leave the field, the better it all gets for everyone, including me!”
+                    Tracy Chou</i>
+                    </p>
+                    <h3>Subscribe to my newsletter</h3>
+                    <div class="subscribe">
+                        
+                        <form action="">
+                            <input class="subInput" type="text" placeholder="Email">
+                            <button class="subButton">Subscribe</button>
                         </form>
-                        <div id="queries" class="queries"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- About me  -->
+            <div class="aboutme" id="aboutme">
+                <h1 class="section-header" >About Me</h1>
+                <p> I'm a tech enthusiaty lady,a software loving career .I have 6 months experiences in software development.The driving passion started back in 2020 where i was working as support agent in IT technical assistant departement.I was very eager and started to learn the concept of software development. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae provident ut illum a beatae, soluta eveniet velit fugit itaque pariatur?</p>
+            </div>
+            <!-- SKILLS Section -->
+            <div class="skills" id="skills">
+                <h1 class="section-header" >Skills</h1>
+                <div class="skills-container">
+                    <div class="softskills">
+                        <h3 class="skills-header">Soft Skills</h3>
+                        <h3 class="skills-item">Communication Skills</h3>
+                        <h3 class="skills-item">Collaboration Skills</h3>
+                        <h3 class="skills-item">Remote work Skills</h3>
+                        <h3 class="skills-item">Culture awareness Skills</h3>
+                        <h3 class="skills-item">etc Skills</h3>
+                    </div>
+                    <div class="hardskills">
+                        <h3 class="skills-header">Hard Skills</h3>
+                        <h3 class="skills-item">JavaScript</h3>
+                        <h3 class="skills-item">Docker</h3>
+                        <h3 class="skills-item">Nodejs</h3>
+                        <h3 class="skills-item">Reactjs</h3>
+                        <h3 class="skills-item">REST-APIs</h3>
+                        <h3 class="skills-item">HTML</h3>
+                        <h3 class="skills-item">CSS</h3>
+
                     </div>
                 </div>
             </div>
-            </main>
+            <!-- portfolio -->
+            <div class="portfolio" id="portfolio">
+                <h1 class="section-header">Portfolio</h1>
+                <div class="portfolio-container">
+                    <div class="project-card">
+                        <img src="./Image/dummy.jpg" alt="" srcset="" class="project-image">
+                        <h3 class="project-name">Project name</h3>
+                        <p class="description">using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now</p>
+                        <h4 class="technologies">Used technologies</h4>
+                        <div class="tech-tags">
+                            <h6 class="tech">css</h6>
+                            <h6 class="tech">html</h6>
+                            <h6 class="tech">reactjs</h6>
+                            <h6 class="tech">nodejs</h6>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./Image/dummy.jpg" alt="" srcset="" class="project-image">
+                        <h3 class="project-name">Project name</h3>
+                        <p class="description">using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now</p>
+                        <h4 class="technologies">Used technologies</h4>
+                        <div class="tech-tags">
+                            <h6 class="tech">css</h6>
+                            <h6 class="tech">html</h6>
+                            <h6 class="tech">reactjs</h6>
+                            <h6 class="tech">nodejs</h6>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./Image/dummy.jpg" alt="" srcset="" class="project-image">
+                        <h3 class="project-name">Project name</h3>
+                        <p class="description">using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now</p>
+                        <h4 class="technologies">Used technologies</h4>
+                        <div class="tech-tags">
+                            <h6 class="tech">css</h6>
+                            <h6 class="tech">html</h6>
+                            <h6 class="tech">reactjs</h6>
+                            <h6 class="tech">nodejs</h6>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Contact me -->
+            <h1 class="section-header-contact">Contact me</h1>
+            <div class="contactme" id="contactme">
+                <form action="" id="contact-form" method="POST">
+                    <input class="contactinputs" type="text" name="email" placeholder="Email"><br>
+                    <input class="contactinputs" type="text" name="name" placeholder="Name"><br>
+                    <input class="contactinputs" type="text" name="subject" placeholder="Subject"><br>
+                    <input class="contactinputs" type="text" name="phonenumber" placeholder="Phone number"><br>
+                    Detail the message: <br>
+                    <textarea class="contacttext" name="text" cols="30" rows="10" placeholder="Detatil the message">
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
-            <script src="./JS/qon.js"></script>
-            <script src="./JS/blogUser.js"></script>
-            <script src="./JS/dashboard.js"></script>
-
-            <!-- <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                    const recentImageDataUrl = localStorage.getItem("recent-image");
-                    if (recentImageDataUrl) {
-                        document.querySelector("#imgPreview").setAttribute("src", recentImageDataUrl);
-                    }
-                }
-                )
-            </script> -->
-
+                    </textarea><br>
+                    <button class="sendmessage">Send message</button>
+                </form>
+            </div>
+            <footer class="footer">
+                <span>designed by @Gihozo 2022 copyright</span>
+                <a href=""> <i class="fab fa-twitter fa-2x"></i></a>
+                <a href=""> <i class="fab fa-github fa-2x"></i></a>
+                <a href=""> <i class="fab fa-instagram fa-2x"></i></a>
+                <a href=""> <i class="fab fa-linkedin fa-2x"></i></a>
+                <a href=""> <i class="fab fa-facebook fa-2x"></i></a>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+        <script src="./JS/qon.js"></script>
+        <script src="./JS/blogUser.js"></script>
+        <script src="./JS/dashboard.js"></script>
+    </div>
 </body>
 
 </html>
