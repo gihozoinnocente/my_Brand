@@ -9,8 +9,11 @@ queries.forEach(function (item) {
     const h5 = document.createElement("h5")
     h5.textContent = item.email;
     const h6 = document.createElement("h6")
+    const phonenumber = document.createElement("h6")
+    phonenumber.textContent = "Phone number: " + item.phonenumber
     h6.textContent = `Sent: ${moment(item.sentOn).fromNow()}`
     const p = document.createElement("p");
+    p.setAttribute("class", "messagepar")
     p.textContent = item.message
     const deleteButton = document.createElement("button")
     deleteButton.textContent = "Delete";
@@ -31,6 +34,7 @@ queries.forEach(function (item) {
     div.append(h5);
     div.append(h5);
     div.append(h6);
+    div.append(phonenumber)
     div.append(p);
     div.append(deleteButton);
     queriesContainer.appendChild(div);
