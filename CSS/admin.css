@@ -30,3 +30,8 @@ margin: 0 auto;
   color: blanchedalmond;
   margin:10px 0px;
 }
+#articleImage{
+  margin-top: 20px;
+  width: 280px !important;
+  height: 200px !important;
+}

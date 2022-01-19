@@ -8,37 +8,37 @@ const button = document.getElementById("dropbtn");
 
 var url;
 document.querySelector("#myFileInput").addEventListener("change", function () {
-        const reader = new FileReader();
-        reader.addEventListener("load", () => {
-            localStorage.setItem("recent-image", reader.result)
-            url = reader.result;
-        });
-
-        reader.readAsDataURL(this.files[0]);
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+        localStorage.setItem("recent-image", reader.result)
+        url = reader.result;
     });
-    // document.addEventListener("DOMContentLoaded", () => {
-    //     const recentImageDataUrl = localStorage.getItem("recent-image");
-    //     if (recentImageDataUrl) {
-    //         document.querySelector("#imgPreview").setAttribute("src", recentImageDataUrl);
-    //     }
-    // }
-    // )
 
-const addArticle = (a) =>{
+    reader.readAsDataURL(this.files[0]);
+});
+// document.addEventListener("DOMContentLoaded", () => {
+//     const recentImageDataUrl = localStorage.getItem("recent-image");
+//     if (recentImageDataUrl) {
+//         document.querySelector("#imgPreview").setAttribute("src", recentImageDataUrl);
+//     }
+// }
+// )
+
+const addArticle = (a) => {
     a.preventDefault();
 
 
-    
-    const prevBlog = localStorage.getItem("articles")?
-    Object.values(JSON.parse(localStorage.getItem("articles"))) : [];
 
-    localStorage.setItem("articles",JSON.stringify([...[...prevBlog,{title:titleInput.value,author:authorInput.value,image:img.url,article:articleInput.value}]]))
-  
+    const prevBlog = localStorage.getItem("articles") ?
+        Object.values(JSON.parse(localStorage.getItem("articles"))) : [];
+
+    localStorage.setItem("articles", JSON.stringify([...[...prevBlog, { title: titleInput.value, author: authorInput.value, image: img.url, article: articleInput.value }]]))
+
 
 };
 
 // console.log(addArticle())
-button.addEventListener("click", (a)=>{addArticle(a)})
+button.addEventListener("click", (a) => { addArticle(a) })
 
 
 
