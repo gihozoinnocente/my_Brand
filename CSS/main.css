@@ -26,6 +26,7 @@ body {
   height: auto;
 }
 /* STYLING THE NAVIGATION */
+
 .navbar {
   height: 100vh;
   width: 15vw;
@@ -44,7 +45,7 @@ body {
 .header .my-name{
   color: rgb(0, 0, 0);
   font-weight: 900;
-  font-size: 20px;
+  font-size: 22px;
 }
 .nav-list{
   display: block;
@@ -52,7 +53,7 @@ body {
   padding: 0px;
 }
 .nav-link{
- padding: 15px 0px;
+ padding: 20px 0px;
  cursor: pointer;
 }
 
@@ -62,14 +63,48 @@ body {
   padding: 25px;
   width: 100%;
 }
-.nav-list .nav-link a:hover{
+.nav-list .nav-link:hover {
   color: rgb(0, 128, 96);
   font-size: 19px;
+  border-bottom:4px solid rgb(0, 128, 96);
 }
-.fixed {
-  position: fixed;
-  margin-left: 0;
-  margin-bottom: 0px;
+.nav-list .nav-link a:hover{
+  color: rgb(0, 128, 96);
+}
+#logoutButton{
+  background-color: rgb(0, 128, 96);
+  border: 1px solid rgb(0, 128, 96);
+  padding: 10px 40px;
+  font-size: 18px;
+  color: blanchedalmond;
+  width: 100%;
+  margin-top: 100px;
+  cursor: pointer;
+}
+#dashProfile{
+  width: 100px;
+  height: 100px;
+}
+
+.top-header{
+  height: 50px;
+  background-color: rgb(0, 128, 96);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+#logoutTopHeader{
+  background-color: blanchedalmond;
+  border: 1px solid blanchedalmond;
+  padding: 10px 40px;
+  font-size: 18px;
+  color: rgb(0, 128, 96);
+  cursor: pointer;
+  border-radius: 10px;
+  height: 40px;
+  text-align: center;
+  margin-right: 10px;
 }
 
 /* SHOWCASE */
@@ -135,10 +170,11 @@ body {
 }
 /* STYLING SKILLS */
 .skills{
-  padding: 20px;
+  padding: 100px 20px;
 }
 .skills-header{
   color: rgb(0, 128, 96);
+  grid-column: 1/-1;
 }
 .skills-container{
   display: flex;
@@ -146,27 +182,31 @@ body {
 .softskills, .hardskills{
   width: 50%;
   padding: 30px;
+  font-size: 16px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
 }
 .skills-item{
   background-color: rgb(0, 128, 96) !important;
   color: blanchedalmond;
-  padding: 10px 40px;
+  padding: 10px 10px;
   border-radius: 10px;
-  margin: 10px 0px
+  text-align: center;
 }
 /* PORTFOLIO */
 .portfolio-container{
   overflow: hidden;
-  display: flex;
-  font-family: inherit;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 .project-card{
-  width: 30%;
+  width: 100%;
   padding: 10px;
   border: 1px solid blanchedalmond;
   border-radius: 10px;
-  margin: 0px 10px;
 }
 .project-image{
   width: 100%;
@@ -177,15 +217,17 @@ body {
   padding: 20px 0px;
 }
 .tech-tags{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   width:100%;
 }
 .tech{
   background-color: blanchedalmond;
   padding: 5px 10px;
-  margin: 0px 10px;
   color: rgb(0, 128, 96);
-  border-radius: 10px;
+  border-radius: 20px;
+  text-align: center;
 }
 /* STYLING THE CONTACT PAGE */
 .contactme{
