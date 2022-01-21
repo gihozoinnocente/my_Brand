@@ -35,6 +35,65 @@ articles.forEach(function (item) {
             location.reload()
         }
     })
+
+    var updateDiv = document.getElementById("UpdateDiv");
+    const titleInput= document.getElementById("inputTitle");
+    const contentInput = document.getElementById("inputContent");
+    const updateForm = document.querySelector(".updateArticleForm");
+    updateButton.addEventListener("click", (e) => {
+        const toBeUpdated = updateButton.getAttribute("value");
+        const allArticles = JSON.parse(localStorage.getItem("articles"));
+        updateDiv.style.display="block";
+        // var theRemain = allArticles.filter((articles) =>{
+        //     return articles.id == updateButton.value;
+    
+        for (let i=0; i<allArticles.length; i++){
+            if(allArticles[i].id== updateButton.value){
+                titleInput.value = allArticles[i].title;
+                contentInput.value = allArticles[i].content; 
+               
+               
+                updateForm.addEventListener("submit", (e)=>{
+                    e.preventDefault()
+                    allArticles[i].title = titleInput.value;
+                    allArticles[i].content = contentInput.value;
+                    localStorage.setItem('articles',JSON.stringify(allArticles));
+                    alert("UPDATED SUCCESSUFLY!!")
+                    setTimeout(()=>{
+                        updateForm.reset();
+                        window.location.reload();
+                    },3000)
+
+                })
+            }
+            
+        }
+
+    })
+
+    // for (let i=0; i<allArticles.length; i++){
+    //     if(allArticles[i].id== updateButton.value){
+    //         titleInput.value = allArticles[i].title;
+    //         contentInput.value = allArticles[i].content; 
+    //     }
+        
+    // }
+   
+    // console.log(theRemain.title)
+    // console.log(theRemain)
+
+
+    
+    var resetButton = document.getElementById("resetButton");
+    resetButton.addEventListener("click", (e) => {
+        updateDiv.style.display="none";
+        console.log("clicked")
+    
+    })
+
+
+
+
     div.append(h4);
     div.append(h5);
     div.append(image);

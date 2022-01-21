@@ -15,6 +15,9 @@ queries.forEach(function (item) {
     const p = document.createElement("p");
     p.setAttribute("class", "messagepar")
     p.textContent = item.message
+    const locationP= document.createElement("p");
+    locationP.setAttribute('class','querHeader')
+    locationP.textContent = "User location:" + item.location
     const deleteButton = document.createElement("button")
     deleteButton.textContent = "Delete";
     deleteButton.setAttribute("id", "deleteQuery")
@@ -36,6 +39,7 @@ queries.forEach(function (item) {
     div.append(h6);
     div.append(phonenumber)
     div.append(p);
+    div.append(locationP);
     div.append(deleteButton);
     queriesContainer.appendChild(div);
 })

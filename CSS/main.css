@@ -5,23 +5,23 @@
   text-decoration: none;
   list-style: none;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
 body {
   font-size: 18px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 /* PAGE SECTIONING */
-.body-container{
+.body-container {
   display: flex;
 }
-.side-nav{
+.side-nav {
   width: 15vw;
   height: 100vh;
   overflow: hidden;
   position: fixed;
 }
-.content{
-  margin-left:15vw;
+.content {
+  margin-left: 15vw;
   width: 85vw;
   height: auto;
 }
@@ -42,19 +42,19 @@ body {
   width: 100%;
   border-bottom: 5px solid rgb(0, 128, 96);
 }
-.header .my-name{
+.header .my-name {
   color: rgb(0, 0, 0);
   font-weight: 900;
   font-size: 22px;
 }
-.nav-list{
+.nav-list {
   display: block;
   width: 100%;
   padding: 0px;
 }
-.nav-link{
- padding: 20px 0px;
- cursor: pointer;
+.nav-link {
+  padding: 20px 0px;
+  cursor: pointer;
 }
 
 .nav-list .nav-link a {
@@ -66,12 +66,12 @@ body {
 .nav-list .nav-link:hover {
   color: rgb(0, 128, 96);
   font-size: 19px;
-  border-bottom:4px solid rgb(0, 128, 96);
+  border-bottom: 4px solid rgb(0, 128, 96);
 }
-.nav-list .nav-link a:hover{
+.nav-list .nav-link a:hover {
   color: rgb(0, 128, 96);
 }
-#logoutButton{
+#logoutButton {
   background-color: rgb(0, 128, 96);
   border: 1px solid rgb(0, 128, 96);
   padding: 10px 40px;
@@ -81,20 +81,20 @@ body {
   margin-top: 100px;
   cursor: pointer;
 }
-#dashProfile{
+#dashProfile {
   width: 100px;
   height: 100px;
 }
 
-.top-header{
+.top-header {
   height: 50px;
   background-color: rgb(0, 128, 96);
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
-#logoutTopHeader{
+#logoutTopHeader {
   background-color: blanchedalmond;
   border: 1px solid blanchedalmond;
   padding: 10px 40px;
@@ -106,42 +106,42 @@ body {
   text-align: center;
   margin-right: 10px;
 }
-.current-page{
+.current-page {
   color: blanchedalmond;
-  font-weight:700;
+  font-weight: 700;
   padding-left: 20px;
 }
 /* SHOWCASE */
-.showcase{
+.showcase {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.image{
+.image {
   width: 40%;
   display: flex;
   justify-content: center;
 }
-.image img{
+.image img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
 }
-.beatifulwords{
+.beatifulwords {
   width: 60%;
 }
-.beatifulwords p{
+.beatifulwords p {
   color: rgb(0, 128, 96);
   width: 80%;
   margin: 40px 0px;
-
 }
-.subscribe{
+.subscribe {
   margin-top: 20px;
 }
-.subInput, .subButton{
+.subInput,
+.subButton {
   height: 50px !important;
   width: 80% !important;
   margin: 15px auto;
@@ -150,40 +150,42 @@ body {
   text-align: center;
   font-size: 18px;
 }
-.subButton{
+.subButton {
   background-color: rgb(0, 128, 96);
-  border:rgb(0, 128, 96);
+  border: rgb(0, 128, 96);
   color: blanchedalmond;
   font-size: 22px;
   font-weight: 900;
 }
-.section-header{
+.section-header {
   padding: 20px 0px;
 }
 /* ATYLING ABOUT ME */
 
-.aboutme, .portfolio{
+.aboutme,
+.portfolio {
   background-color: rgb(0, 128, 96);
-  color:blanchedalmond;
+  color: blanchedalmond;
   padding: 20px;
 }
-.aboutme p{
+.aboutme p {
   font-size: 18px;
   font-family: "Inter";
   padding: 30px;
 }
 /* STYLING SKILLS */
-.skills{
+.skills {
   padding: 100px 20px;
 }
-.skills-header{
+.skills-header {
   color: rgb(0, 128, 96);
   grid-column: 1/-1;
 }
-.skills-container{
+.skills-container {
   display: flex;
 }
-.softskills, .hardskills{
+.softskills,
+.hardskills {
   width: 50%;
   padding: 30px;
   font-size: 16px;
@@ -192,7 +194,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
 }
-.skills-item{
+.skills-item {
   background-color: rgb(0, 128, 96) !important;
   color: blanchedalmond;
   padding: 10px 10px;
@@ -200,33 +202,34 @@ body {
   text-align: center;
 }
 /* PORTFOLIO */
-.portfolio-container{
+.portfolio-container {
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-.project-card{
+.project-card {
   width: 100%;
   padding: 10px;
   border: 1px solid blanchedalmond;
   border-radius: 10px;
 }
-.project-image{
+.project-image {
   width: 100%;
   height: 200px;
   border-radius: 10px;
 }
-.project-name, .technologies{
+.project-name,
+.technologies {
   padding: 20px 0px;
 }
-.tech-tags{
+.tech-tags {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  width:100%;
+  width: 100%;
 }
-.tech{
+.tech {
   background-color: blanchedalmond;
   padding: 5px 10px;
   color: rgb(0, 128, 96);
@@ -234,16 +237,16 @@ body {
   text-align: center;
 }
 /* STYLING THE CONTACT PAGE */
-.contactme{
+.contactme {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#contact-form{
+#contact-form {
   width: 80%;
   margin: 0 auto;
 }
-.contactinputs{
+.contactinputs {
   height: 40px;
   border: 1px solid rgb(0, 128, 96);
   border-radius: 10px;
@@ -251,27 +254,27 @@ body {
   text-align: center;
   width: 100%;
 }
-.contacttext{
+.contacttext {
   border: 1px solid rgb(0, 128, 96);
   border-radius: 10px;
   margin: 10px 0px;
   text-align: center;
   width: 100%;
 }
-.sendmessage{
+.sendmessage {
   background-color: rgb(0, 128, 96);
-  border:rgb(0, 128, 96);
+  border: rgb(0, 128, 96);
   color: blanchedalmond;
   font-size: 22px;
   font-weight: 900;
   border-radius: 10px;
   padding: 10px 40px;
 }
-.section-header-contact{
+.section-header-contact {
   padding: 20px 20px;
   color: rgb(0, 128, 96);
 }
-.footer{
+.footer {
   background-color: rgb(0, 128, 96);
   color: blanchedalmond;
   display: flex;
@@ -281,38 +284,58 @@ body {
   width: 100%;
   margin-top: 20px;
 }
-.fa-2x{
+.fa-2x {
   color: blanchedalmond;
   font-size: 15px;
   margin: 0px 20px;
 }
 
+#UpdateDiv {
+  width: 85vw;
+  position: absolute;
+  z-index: 1000;
+  left: 15vw;
+  top: 4.5vh;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.open_close {
+  display: flex;
+}
+.updateArticleForm {
+  background: blanchedalmond;
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  padding: 1rem 2rem;
+}
 /* STYLING THE DASHBOARD */
-#queries, #articles{
+#queries,
+#articles {
   width: 80%;
   margin: 10px auto 10px auto;
   font-size: 16px;
   padding: 20px;
   font-family: "Inter";
 }
-.query{
+.query {
   margin: 20px 20px;
   background-color: blanchedalmond;
   padding: 20px;
 }
-#deleteQuery, #updateArticle, #deleteArticle{
+#deleteQuery,
+#updateArticle,
+#deleteArticle,
+#resetButton {
   background-color: rgb(0, 128, 96);
-  border:1px solid rgb(0, 128, 96);
+  border: 1px solid rgb(0, 128, 96);
   padding: 5px 20px;
   font-size: 16px;
   border-radius: 10px;
   color: blanchedalmond;
-  margin:10px 10px;
-  
+  margin: 10px 10px;
 }
-.messagepar{
+.messagepar {
   margin: 20px 0px;
 }
-
-
-

@@ -5,174 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/blog-comment.css">
+    <!-- <link rel="stylesheet" href="/CSS/main.css"> -->
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
 </head>
-<style>
-    body {
-        margin: opx;
-        padding: 0px;
-        background-color: beige;
-    }
 
-    .tech {
-        background-color: white;
-        margin-left: 200px;
-        margin-right: 200px;
-    }
 
-    img {
-        margin-left: 10px;
-        margin-top: 20px;
-        width: 80%;
-        height: 20%;
-        margin-left: 10%;
-    }
-
-    form {
-        border: 1px solid;
-        margin: 100px;
-    }
-
-    input[type=name] {
-        height: 30px;
-        width: 310px;
-        margin-left: 20px;
-        margin-right: 25px;
-    }
-
-    input[type=email] {
-        height: 30px;
-        width: 310px;
-    }
-
-    input[type=text] {
-        height: 100px;
-        margin-left: 20px;
-        width: 650px;
-        margin-bottom: 20px;
-    }
-
-    .send-blog {
-        width: 130px;
-        height: 30px;
-        margin-top: 20px;
-        color: white;
-        background-color: red;
-        border-radius: 10px;
-        margin-left: 300px;
-    }
-
-    p {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    h1 {
-        margin-left: 180px;
-    }
-
-    h4 {
-        background-color: gray;
-        color: #000;
-        width: 30%;
-        height: 30px;
-        border-top-right-radius: 50px;
-        margin-bottom: -16px;
-    }
-
-    .text-message {
-        border: 1px solid;
-        height: 50px;
-    }
-
-    #message {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    @media (max-width:860px) {
-        .tech {
-            background-color: white;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
-        img {
-            margin-left: 15%;
-            margin-right: 5%;
-            margin-top: 5%;
-            width: 70%;
-            height: 70%;
-        }
-
-        h1 {
-            margin-left: 10%;
-            font-weight: 100%;
-            font-size: 100%;
-        }
-
-        p {
-            padding-left: 0%;
-            padding-right: 0%;
-        }
-
-        form {
-            border: 1px solid;
-            margin: 2%;
-        }
-
-        input[type=name] {
-            height: 20%;
-            width: 80%;
-            margin-left: 20px;
-            margin-right: 25px;
-        }
-
-        input[type=email] {
-            height: 20%;
-            width: 80%;
-            margin-left: 20px;
-            margin-top: 20px;
-        }
-
-        input[type=text] {
-            height: 80px;
-            margin-left: 20px;
-            width: 80%;
-            margin-bottom: 20px;
-        }
-
-        .send-blog {
-            width: 60%;
-            height: 30px;
-            margin-top: 5%;
-            margin-bottom: 5%;
-            color: white;
-            background-color: red;
-            border-radius: 10px;
-            margin-left: 15%;
-        }
-
-        h4 {
-            background-color: gray;
-            color: #000;
-            width: 60%;
-            height: 30px;
-            border-top-right-radius: 50px;
-            margin-bottom: -16px;
-        }
-
-        .text-message {
-            border: 1px solid;
-            height: 50px;
-        }
-
-        #message {
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-    }
-</style>
 
 <body>
     <div class="tech">
@@ -202,25 +41,30 @@
             Modi, ut fuga.
 
         </p>
-        <form>
-            <p>Leave comment here</p>
-            <label for="comment"> <input type="text" placeholder="leave your comment here"></label>
-            <label for="name"><input type="name" placeholder="Name" required></label>
-            <label for="email"><input type="email" placeholder="Email" required></label>
+        <!-- <button class="likeButton" id="likeButton"><i class="fas fa-thumbs-up" onClick="onclick()"></i></button> -->
+
+
+        <p id="btn"><i class="fas fa-thumbs-up"></i> </p>
+        <p><span id="display">0</span>LIKES</p>
+
+        <form id="blog-comment" class="blog-comment" method="POST">
+            <p class="commentTitle">Leave Your Comment</p>
+            <input type="text" name="name" class="blogInput" placeholder="Name">
+            <input type="text" name="email" class="blogInput" placeholder="Email">
+            <textarea name="text" id="blogText" class="blogText" cols="30" rows="10"
+                placeholder="Leave Your Comment Here"></textarea>
             <button class="send-blog">SEND</button>
         </form>
+        <div id="comment-container" class="comment-container">
+            <!-- <div id="message" class="message">
+                <h4>Alice Uwimana</h4>
+                <p class="text-message">check this is to check</p>
+            </div> -->
 
-        <div id="message">
-            <h4>Alice Uwimana</h4>
-            <p class="text-message">check this is to check</p>
-
-            <h4>Alice Uwimana</h4>
-            <p class="text-message">check this is to check</p>
-
-            <h4>Alice Uwimana</h4>
-            <p class="text-message">check this is to check</p>
         </div>
     </div>
+    <script src="/JS/ReadMore.js"></script>
+    <script src="/JS/blog-comment.js"></script>
 </body>
 
 </html>
