@@ -61,9 +61,9 @@
     </div>
 
     <div class="create-container" id="UpdateDiv">
-        <form class="create-article-form  updateArticleForm" method="post" action="">
+        <form class="create-article-form  updateArticleForm" id = "updateArticleForm" method="post" action="">
             <input type="text" placeholder="Title" name="title" class="article-title" id="inputTitle"><br>
-            <input type="file" placeholder="Title" name="photo" id="photo"><br>
+            <input type="file" placeholder="Title" name="image" id="photo"><br>
             Article Contents: <br>
             <textarea name="content" class="content-text" id="inputContent">
             </textarea><br>
@@ -71,12 +71,14 @@
             <button type="reset" id="resetButton">cancel</button>
         </form>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script type="text/JavaScript" src="/helper/fetchAPI.js"></script>
     <script src="/JS/protect-pages.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
         integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src="/JS/create-article.js"></script>
     <script src="./../../JS/admin-blog.js"></script>
     <script src="/JS/logout.js"></script>
 </body>

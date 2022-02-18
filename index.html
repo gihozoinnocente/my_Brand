@@ -28,19 +28,25 @@
                     <h1 class="my-name">Innocente Gihozo </h1>
                     <span class="spanosition"> Junior software developer</span>
                 </div>
-                <ul class="nav-list">
+               
+                
 
-                    <div class="menu">
-                        <li class="nav-link"><a href="index.html">Home</a></li>
-                        <li class="nav-link"><a href="#aboutme">About me</a></li>
-                        <li class="nav-link"><a href="#skills">Skills</a></li>
-                        <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
-                        <li class="nav-link"><a href="./Pages/article.html">Blog</a></li>
-                        <li class="nav-link"><a href="#contactme">Contact me</a></li>
-                        <li class="nav-link"><a href="Pages/login.html">Login</a></li>
-                    </div>
+
+                <div class="menu" id="menu">
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <li class="nav-link"><a href="#aboutme">About me</a></li>
+                    <li class="nav-link"><a href="#skills">Skills</a></li>
+                    <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-link"><a href="./Pages/article.html">Blog</a></li>
+                    <li class="nav-link"><a href="#contactme">Contact me</a></li>
+                    <li class="nav-link"><a href="Pages/login.html">Login</a></li>                 
+                </div>
+               
                 </ul>
             </nav>
+             <!-- USING CHECKBOX HACK -->
+             <input type="checkbox" id="checkbox_toggle" />
+             <label for="checkbox_toggle" class="hamburger">&#9776;</label>   
         </div>
         <!-- Content -->
         <div class="content">
@@ -228,6 +234,8 @@
                 <a href=""> <i class="fab fa-facebook fa-2x"></i></a>
             </footer>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+        <script type="text/JavaScript" src="./helper/fetchAPI.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
         <script src="./JS/qon.js"></script>
         <script src="./JS/blogUser.js"></script>
@@ -236,6 +244,16 @@
         <script src="./JS/contact-validation.js"></script>
         <!-- <script src="./JS/dashboard.js"></script> -->
 
+        <script>
+            function myFunction() {
+                var x = document.getElementById("menu");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
     </div>
 </body>
 

@@ -36,21 +36,7 @@ blogForm.addEventListener("submit", (e) => {
 
 const blogContainer = document.querySelector("#comment-container");
 const blogmessage = JSON.parse(localStorage.getItem("blogmessage"));
-// blogmessage.forEach(function (item) {
-//     const div = document.createElement("div");
-//     div.setAttribute('class', 'message');
-//     const h4 = document.createElement("h4");
-//     // h4.setAttribute('class', 'queryHeader')
-//     h4.textContent = item.name;
-//     const p = document.createElement("p");
-//     p.setAttribute("class", "text-message")
-//     p.textContent = item.content;
 
-
-//     div.append(h4)
-//     div.append(p)
-//     blogContainer.appendChild(div)
-// })
 
 
 function view(info,id)

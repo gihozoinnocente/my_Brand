@@ -8,6 +8,7 @@ body {
   background-color: white;
   margin-left: 200px;
   margin-right: 200px;
+  height: auto;
 }
 
 img {
@@ -70,14 +71,17 @@ h4 {
   width: 30%;
   height: 30px;
   padding-left: 10px;
-  font-size: 30px;
+  font-size: 15px;
   border-top-right-radius: 50px;
-  margin-bottom: -16px;
+  margin-bottom: 0px;
 }
 
 .text-message {
   border: 1px solid;
   height: 50px;
+  width: 500px;
+  margin-bottom: 20px;
+  color: rgb(0, 128, 96) ;
 }
 
 #message {
