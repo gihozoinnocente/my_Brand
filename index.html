@@ -22,20 +22,17 @@
 <body>
     <div class="body-container">
         <!-- Side nav -->
-        
         <div class="side-nav">
             <nav class="navbar">
                 <div class="header status">
                     <h1 class="my-name">Innocente Gihozo </h1>
                     <span class="spanosition"> Junior software developer</span>
-                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
                 </div>
+               
                 
-                
-              
+
 
                 <div class="menu" id="menu">
-                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
                     <li class="nav-link"><a href="index.html">Home</a></li>
                     <li class="nav-link"><a href="#aboutme">About me</a></li>
                     <li class="nav-link"><a href="#skills">Skills</a></li>
@@ -44,14 +41,12 @@
                     <li class="nav-link"><a href="#contactme">Contact me</a></li>
                     <li class="nav-link"><a href="Pages/login.html">Login</a></li>                 
                 </div>
-
-              
                
                 </ul>
             </nav>
-             <!-- USING CHECKBOX HACK
+             <!-- USING CHECKBOX HACK -->
              <input type="checkbox" id="checkbox_toggle" />
-             <label for="checkbox_toggle" class="hamburger">&#9776;</label>    -->
+             <label for="checkbox_toggle" class="hamburger">&#9776;</label>   
         </div>
         <!-- Content -->
         <div class="content">
@@ -245,11 +240,11 @@
         <script src="./JS/qon.js"></script>
         <script src="./JS/blogUser.js"></script>
         <script src="./JS/article.js"></script>
-        <!-- <script src="./JS/geolocation.js"></script> -->
+        <script src="./JS/geolocation.js"></script>
         <script src="./JS/contact-validation.js"></script>
         <!-- <script src="./JS/dashboard.js"></script> -->
 
-        <!-- <script>
+        <script>
             function myFunction() {
                 var x = document.getElementById("menu");
                 if (x.style.display === "block") {
@@ -258,26 +253,7 @@
                     x.style.display = "block";
                 }
             }
-        </script> -->
-        <script>
-            function openNav() {
-                var e = document.getElementById("menu");
-                if (e.style.width == '250px')
-                {
-                    e.style.width = '0px';
-                    e.style.display="block";
-                }
-                else 
-                {
-                    e.style.width = '250px';
-                    e.style.display="none";
-                }
-            }
-            
-            // function closeNav() {
-            //     document.getElementById("menu").style.width = "0";
-            // }
-            </script>
+        </script>
     </div>
 </body>
 
