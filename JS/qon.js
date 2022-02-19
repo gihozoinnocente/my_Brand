@@ -96,7 +96,7 @@ contactForm.addEventListener("submit",async (e) => {
         message,
         subject,
         phonenumber,
-        location,
+        // location,
         // sentOn: Date.now()
     }
    
@@ -112,8 +112,8 @@ contactForm.addEventListener("submit",async (e) => {
     e.target.elements.name.value = ''
     e.target.elements.text.value = ''
     e.target.elements.email.value = ''
-    e.target.elements.subject.value = ''
-    e.target.elements.phonenumber.value = ''
+    // e.target.elements.subject.value = ''
+    // e.target.elements.phonenumber.value = ''
 
 
 // }
