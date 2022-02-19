@@ -56,15 +56,16 @@
     font-size: 20px;
   }
   .nav-list {
-    display: block;
+    /* display: none; */
     width: 100%;
     height: auto;
     padding: 0px;
   }
 
   .nav-link {
-    padding: 20px 0px;
+    padding: 5px 0px;
     cursor: pointer;
+    /* display: none; */
   }
 
   .nav-list .nav-link a {
