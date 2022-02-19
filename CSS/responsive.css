@@ -20,6 +20,14 @@
     
   }
 
+  .menu{
+    width: 40%;
+    display: block;
+    background-color: grey;
+    position: fixed;
+    top: 47px;
+
+  }
   .side-nav {
     width: 100vw;
     height: 100vh;

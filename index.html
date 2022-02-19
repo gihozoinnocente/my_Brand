@@ -23,41 +23,43 @@
     <div class="body-container">
         <!-- Side nav -->
         <div class="side-nav">
-            
+
             <nav class="navbar">
                 <div id="one">
                     <div class="header status">
-                     <h1 class="my-name">Innocente Gihozo </h1>
+                        <h1 class="my-name">Innocente Gihozo </h1>
                         <span class="spanosition"> Junior software developer</span>
-                    <span style="font-size:30px;cursor:pointer" id="menuIcon" onclick="openNav()">&#9776; </span>
+                        <span style="font-size:30px;cursor:pointer" id="menuIcon" onclick="openNav()">&#9776; </span>
                     </div>
-              </div>
-              <div id="two">
-                <ul class="nav-links">
-                  <!-- checkbox toggle -->
-        
-                  <!-- <input type="checkbox" id="checkbox_toggle" />
-                 <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
-                <!-- navigation menu -->
-
-
-                <div class="menu" id="menu">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                    <li class="nav-link"><a href="index.html">Home</a></li>
-                    <li class="nav-link"><a href="#aboutme">About me</a></li>
-                    <li class="nav-link"><a href="#skills">Skills</a></li>
-                    <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
-                    <li class="nav-link"><a href="./Pages/article.html">Blog</a></li>
-                    <li class="nav-link"><a href="#contactme">Contact me</a></li>
-                    <li class="nav-link"><a href="Pages/login.html">Login</a></li>                 
                 </div>
-               
-                </ul>
-            </div>
+                <div id="two">
+                    <ul class="nav-links">
+                        <!-- checkbox toggle -->
+
+                        <!-- <input type="checkbox" id="checkbox_toggle" />
+                 <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+                        <!-- navigation menu -->
+
+
+                        <div class="menu" id="menu">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <li class="nav-link"><a href="index.html">Home</a></li>
+                            <li class="nav-link"><a href="#aboutme">About me</a></li>
+                            <li class="nav-link"><a href="#skills">Skills</a></li>
+                            <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+                            <li class="nav-link"><a href="./Pages/article.html">Blog</a></li>
+                            <li class="nav-link"><a href="#contactme">Contact me</a></li>
+                            <li class="nav-link loginLink"><a href="Pages/login.html">Login</a></li>
+                            <li class="nav-link adminLink" style="display: none"><a href="Pages/Admin_Gen.html/admin_dash.html">Admin
+                                    dashboard</a></li>
+                        </div>
+
+                    </ul>
+                </div>
 
             </nav>
-             <!-- USING CHECKBOX HACK -->
-             <!-- <input type="checkbox" id="checkbox_toggle" />
+            <!-- USING CHECKBOX HACK -->
+            <!-- <input type="checkbox" id="checkbox_toggle" />
              <label for="checkbox_toggle" class="hamburger">&#9776;</label>    -->
         </div>
         <!-- Content -->
@@ -216,7 +218,7 @@
             <h1 class="section-header-contact">Contact me</h1>
             <div class="contactme" id="contactme">
                 <!-- <form action="" id="contact-form" id="contact-email" method="POST" onsubmit="getLocation()"> -->
-                <form action="" id="contact-form" id="contact-email" method="POST" >
+                <form action="" id="contact-form" id="contact-email" method="POST">
                     <input class="contactinputs" type="text" name="email" placeholder="Email"
                         onkeyup='validateEmail()'><br>
                     <span class='error-message' id='email-error'></span>
@@ -256,26 +258,41 @@
         <!-- <script src="./JS/geolocation.js"></script> -->
         <script src="./JS/contact-validation.js"></script>
         <!-- <script src="./JS/dashboard.js"></script> -->
+
         <script>
-             function openNav() {
+            function openNav() {
                 var e = document.getElementById("menu");
-                if (e.style.width == '250px')
-                {
-                    e.style.width = '0px';
+                if (e.style.width == '250px') {
+                    e.style.width = '40%';
                     e.style.display = 'block';
+                
+                    console.log(window.localStorage.getItem("isLogedIn")=="true")
+            if (window.localStorage.getItem("isLogedIn") == "true") {
+                document.querySelector(".loginLink").style.display = "none";
+                document.querySelector(".adminLink").style.display = "block"
+            }  
                 }
-                else 
-                {
+                else {
                     e.style.width = '250px';
                     e.style.display = 'none';
                 }
+           
             }
-            
+
             function closeNav() {
-                document.getElementById("menu").style.display= "0";
-                
+                document.getElementById("menu").style.width = "0";
+
             }
-            </script> -->
+            function init(){
+                console.log(window.localStorage.getItem("isLogedIn")=="true")
+            if (window.localStorage.getItem("isLogedIn") == "true") {
+                document.querySelector(".loginLink").style.display = "none";
+                document.querySelector(".adminLink").style.display = "block"
+            }  
+            }
+            init()
+          
+        </script> 
     </div>
 </body>
 
