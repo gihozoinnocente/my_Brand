@@ -2,6 +2,7 @@ body {
   margin: opx;
   padding: 0px;
   background-color: blanchedalmond;
+  
 }
 
 .tech {
@@ -42,7 +43,6 @@ form {
 }
 .commentTitle {
   color: rgb(0, 128, 96);
-  /* color: blanchedalmond; */
   font-size: 22px;
   font-weight: 900;
 }
@@ -76,6 +76,7 @@ h4 {
   margin-bottom: 0px;
 }
 
+
 .text-message {
   border: 1px solid;
   height: 50px;
@@ -88,6 +89,7 @@ h4 {
   margin-left: 50px;
   margin-right: 50px;
   color: rgb(0, 128, 96);
+  height: auto;
 }
 
 #btn {

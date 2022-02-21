@@ -1,5 +1,4 @@
 const articlesContainer = document.querySelector("#articles");
-// const articles = JSON.parse(localStorage.getItem("articles"));
 const updateArticleForm = document.getElementById('updateArticleForm');
 console.log(updateArticleForm)
 const titleInput = document.getElementById('inputTitle');
@@ -57,90 +56,8 @@ async function viewers() {
         updateButton.addEventListener("click", async (e) => {
             const toBeUpdated = updateButton.getAttribute("value");
             updateDiv.style.display = "block";
-            // let img= document.getElementById("articleImage").addEventListener("change", function (e){console.log(e.target.files[0])})
-
-
           
-
-
-
-            // for (let i=0; i<allArticles.length; i++){
-            //     if(allArticles[i].id== updateButton.value){
-            //         titleInput.value = allArticles[i].title;
-            //         contentInput.value = allArticles[i].content; 
-
-
-            //         updateForm.addEventListener("submit", (e)=>{
-            //             e.preventDefault()
-            //             allArticles[i].title = titleInput.value;
-            //             allArticles[i].content = contentInput.value;
-            //             localStorage.setItem('articles',JSON.stringify(allArticles));
-            //             alert("UPDATED SUCCESSUFLY!!")
-            //             setTimeout(()=>{
-            //                 updateForm.reset();
-            //                 window.location.reload();
-            //             },3000)
-
-            //         })
-            //     }
-
-            // }
-
-            // const edit = confirm("are you sure you want to edit ?");
-            // if (edit === true) {
-            //     const response = await fetch(
-            //         `http://localhost:3000/api/v1/articles/${id}`, {
-            //             method: "PATCH",
-            //             headers: {
-            //                 'Content-type': 'application/json; charset=UTF-8',
-            //                 'Authorization':  window.localStorage.getItem ("accessToken")
-
-            //             }
-
-            //         }
-
-            //     );
-            //     console.log(response)
-            //     const result = await response.json();
-
-            // }
-
-            // const title = e.target.elements.title.value
-            // const content = e.target.elements.content.value
-            // // let images = e.target.elements.articleImage.files[0];
-            // const formData = new FormData();
-            // // formData.append('img', images);
-            // formData.append("title", title);
-            // formData.append("content", content);
-
-            // let existingArticle = await fetch('http://localhost:3000/api/v1/articles/${id}', {
-            // method :"PATCH",
-            // mode: 'cors',
-            // cache: 'reload',
-            // headers: {
-            //   'Accept': 'application/json',
-
-            //   'Authorization' : window.localStorage.getItem ("accessToken"),
-            // },
-
-            // body: formData,
-            // })
-
-
-
-            // .then((res) => res.json())
-            // .then((data) => console.log(data));
-            // // if (existingArticle) {
-            // //     alert("Article edited successfully");
-            // //     // window.location.href = "http://127.0.0.1:5502/Pages/article.html";
-            // // } else {
-            // //     alert("not created");
-            // // }
-
-
-
         })
-
 
 
 

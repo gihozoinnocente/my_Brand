@@ -6,16 +6,12 @@ const blogsection = document.querySelector('.tech')
 const readAppend = document.createElement('div')
 
 async function renderArticles() {
-    // const response = await fetch(`http://localhost:3000/api/v1/articles/${id}`)
     const response = await fetch(`https://staging-ft-auth-validat-qg7m2y.herokuapp.com/api/v1/articles/${id}`)
     if (response) {
 
         const fetchedResponse = await response.json()
         const article = fetchedResponse.data
-        // console.log(article)
-
-
-        // let myArticles = "";
+        
         blogsection.innerHTML += `
     <div class="tech">
         <img src="${article.image}" alt="" id="blogImage">
@@ -90,25 +86,6 @@ async function renderArticles() {
 
 renderArticles()
 
-
-
-// {
-//     console.log(id);
-//     let div = document.createElement("blog");
-//     div.setAttribute("class", "blog");
-//     div.innerHTML = `
-//     <div id="message" class="message">
-//     <h4>${info.name}</h4>
-//     <p class="text-message">${info.message}</p>
-// </div>
-// `;
-//     blogContainer.appendChild(div);
-// }
-
-// blogmessage.forEach((Element, id) => {
-//     view(Element, id);
-//     console.log(id)
-// })
 
 
 

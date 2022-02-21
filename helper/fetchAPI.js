@@ -62,20 +62,7 @@ var baseUrl = "https://staging-ft-auth-validat-qg7m2y.herokuapp.com/api/v1";
       }
     }
 
-  //   async function dlt (url, post) {
 
-  //     const res = await fetch(url, {
-  //         method: 'DELETE',
-  //         headers: {
-  //             'Content-Type': 'application/json'
-  //         },
-  //         body: JSON.stringify(post)
-  //     })
-
-  //     const data = await 'Deleted successfully'
-  //     return data
-
-  // }
    
    
      

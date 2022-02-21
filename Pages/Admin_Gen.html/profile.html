@@ -49,6 +49,17 @@
                 <h3 class="current-page">Profile Page</h3>
                 <button id="logoutTopHeader" onclick="logout();">Logout</button>
             </div>
+            <div id="updateProfile">
+                <form action="" id="contact-form" id="contact-email" method="POST">
+                    <input class="contactinputs" type="text" name="email" placeholder="New password"><br>
+                    <input class="contactinputs" id="contact-name" type="text" name="name" placeholder="Confirm password"><br>
+                   
+                
+                       <button class="sendmessage" class="btn btn-default" onclick='return validateForm()'>Update Password
+                        </button>
+                   
+                </form>
+            </div>
         </div>
     </div>
     <script src="/JS/protect-pages.js"></script>
