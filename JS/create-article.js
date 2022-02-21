@@ -71,7 +71,8 @@ createArticleForm.addEventListener("submit", async (e) => {
         .then((data) => {
         if (data.status === 200) {
             alert("Article created successfully");
-            window.location.href = "http://127.0.0.1:5502/Pages/article.html";
+            // window.location.href = "http://127.0.0.1:5502/Pages/article.html"; 
+            window.location.href = "/Pages/article.html";
         } else {
             alert("not created");
         }
