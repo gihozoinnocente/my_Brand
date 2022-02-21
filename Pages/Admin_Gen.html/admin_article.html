@@ -46,29 +46,38 @@
             </div>
 
             <div id="newArticle">
-                <form class="write">
-                    <label for="title" class="lbl">TITLE<input type="text" name="title" required></label>
-                    <label for="author" class="lbl">AUTHOR <input type="author" name="author"></label>
-                    <label for="article" class="lbl">STORY<input type="message" name="message"></label>
+                <form class="write" id="blogForm">
+                    <label for="title" class="lbl">TITLE<input type="text" name="title" required id="title"></label>
+                    <label for="author" class="lbl">AUTHOR <input type="author" name="author" id="author"></label>
+                    <div><input type="file" id="myFileInput">
+                        <img id="imgPreview" src="" alt="Preview">
+                    </div>
+
+                    <label for="article" class="lbl">STORY<input type="message" name="message" id="article"></label>
                     </br>
                     <label for="date" class="date">Publish date <input type="date" value="2021-12-23" min="2018-01-01"
-                            max="2021-12-23">
+                            max="2021-12-23" id="date">
                     </label>
                     <div class="dropdown">
-                        <button class="dropbtn">Click here</button>
-                        <div class="dropdown-content">
+                        <button class="dropbtn" id="dropbtn">Click here</button>
+                        <!-- <div class="dropdown-content">
                             <a href="#">Upload</a>
                             <a href="#">Attach a new file</a>
                             <a href="#">Edit</a>
-                        </div>
+                        </div> -->
                     </div>
 
                 </form>
+                <div id="articles" class="articles"></div>
+
+
             </div>
 
         </div>
 
     </div>
+    <script src="/JS/blog.js"></script>
+  
 </body>
 
 </html>

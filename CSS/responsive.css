@@ -1,4 +1,4 @@
-@media (min-width: 481px) and (max-width: 1044px) {
+@media (max-width: 760px) {
   * {
     padding: 0;
     margin: 0;
@@ -6,424 +6,353 @@
     text-decoration: none;
     list-style: none;
   }
+
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+
   body {
-    font-family: "Open Sans", sans-serif;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+  }
+  /* PAGE SECTIONING */
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    
   }
 
-  nav {
-    height: 100%;
-    width: 15vh;
-    margin-left: 0px;
-  }
-  label.logo {
-    border: 1px solid;
-  }
-  .name {
-    font-size: 10px;
-    color: teal;
-    line-height: 20px;
-    padding-left: 15%;
-    padding-top: 10px;
-    align-items: center;
-  }
-  .nameOne {
-    padding-left: 10px;
-    color: black;
-    font-size: 8px;
-  }
-  nav ul {
-    margin-right: 0px;
-  }
-  nav li {
+  .menu{
+    width: 40%;
     display: block;
-    line-height: 30px;
-    padding-left: 0%;
-    margin: 0 0px;
-  }
+    background-color: grey;
+    position: fixed;
+    top: 47px;
 
-  nav a {
-    color: black;
-    font-size: 13px;
-    padding: 1px 7px;
-    border-radius: 3px;
   }
-
-  .indexOne {
-    margin-left: 7%;
-  }
-  .aboutOne {
-    margin-left: 0%;
-  }
-  .skillsOne {
-    margin-left: 7%;
-  }
-  .portoOne {
-    margin-left: 0%;
-  }
-  .blogOne {
-    margin-left: 7%;
-  }
-  .cont {
-    margin-left: 0%;
-  }
-  .log {
-    margin-left: 2%;
-  }
-
-  #bodyTwo {
-    color: whitesmoke;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  .side-nav {
     width: 100vw;
     height: 100vh;
-    z-index: 1;
-    padding: 30px;
-    font-size: 30px;
-    letter-spacing: 0.3rem;
+    overflow: visible;
+    /* overflow: hidden; */
+    position: absolute;
+    /* position: fixed; */
+    /* display: none; */
+    /* flex-direction: column; */
+    /* z-index: -1; */
+    
   }
-
-  #bodyThree {
-    margin-left: 15%;
-    height: 100%;
-    margin-top: auto;
-  }
-
-  #about {
-    height: 100px;
-    color: #fff;
-    background-color: #04aa6d;
-    padding-top: 40px;
-    padding-left: 50px;
-    font-size: 30px;
-  }
-
-  #aboutText {
-    margin-left: 100px;
-    margin-right: 100px;
-    line-height: 20px;
-    margin-top: 100px;
-    letter-spacing: 0.1rem;
-  }
-
-  /* SKILLS  */
-
-  #bodyFive {
-    margin-left: 15%;
-    height: 100%;
-    justify-content: center;
-  }
-
-  #skills {
-    height: 100px;
-    color: #fff;
-    background-color: #04aa6d;
-    padding-top: 40px;
-    padding-left: 50px;
-    font-size: 30px;
-  }
-  .skillsTwo {
-    height: 200px;
-    width: 250px;
-    padding-left: 50px;
-    padding-right: 30px;
-    padding-top: 5px;
-  }
-  h1 {
-    padding-left: 50px;
-  }
-
-  /* PORTOFolio*/
-
-  #bodySix {
-    margin-left: 15%;
+  .content {
+    margin-left: 0vw;
+    margin-top: 25%;
+    width: 100vw;
     height: auto;
   }
-
-  #porto {
-    color: #fff;
-    background-color: #04aa6d;
-    padding-top: 40px;
-    padding-left: 50px;
-    font-size: 15px;
-    height: 100px;
-  }
-  .web {
-    height: 180px;
-    width: 230px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-  .portoTwo {
-    border: 1px solid;
-    height: 100%;
-    width: 45%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 5%;
-    margin-left: 10%;
-  }
-
-  .portoThree {
-    border: 1px solid;
-    width: 45%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 5%;
+  /* .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
     margin-left: 50px;
-  }
-  .portoFour {
-    display: flex;
-    flex-direction: column;
-  }
+} */
 
-  .portoFive {
-    padding: 40px;
-  }
-  .portoSix {
-    font-weight: 20px;
-  }
+  /* STYLING THE NAVIGATION */
 
-  /* BLOG */
-  #bodySeven {
-    margin-left: 0%;
-    height: auto;
-  }
-
-  .blogGen {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-around;
-    padding: 20px;
-    padding-top: 100px;
-    padding-right: 40px;
-  }
-  .blogGen section {
-    width: 300px;
-    height: 400px;
-    margin: 1.5rem;
-    margin-left: 15%;
-    box-shadow: 30px;
-    border: 1px solid blue;
-  }
-  #blogs {
-    color: #fff;
-    background-color: #04aa6d;
-    padding-top: 40px;
-    padding-left: 50px;
-    font-size: 30px;
-    height: 100px;
-  }
-
-  #bodyFour {
-    height: 100vh;
-  }
-
-  form {
-    border: 1px solid;
-    margin: 0px;
-    margin-right: 60px;
-  }
-
-  input[type="name"] {
-    height: 30px;
-    width: 120px;
-    margin-left: 10px;
-    margin-right: 0px;
-  }
-
-  input[type="email"] {
-    height: 30px;
-    width: 120px;
-  }
-
-  input[type="text"] {
-    height: 150px;
-    margin-left: 10px;
-    width: 250px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  .send-blog {
-    width: 130px;
-    height: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: white;
-    background-color: red;
-    border-radius: 10px;
-    margin-left: 50px;
-  }
-}
-
-/* NAVBAR STYLING STARTS */
-.navbar {
-  display: block;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.nav-links a {
-  color: white;
-}
-
-.menu {
-  display: block;
-  gap: 1em;
-  font-size: 18px;
-}
-
-.menu li:hover {
-  background-color: #4c9e9e;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
-.menu li {
-  padding: 5px 14px;
-}
-
-/*RESPONSIVE NAVBAR MENU STARTS*/
-
-input[type="checkbox"] {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-  font-size: 24px;
-  /* user-select: none; */
-  margin-left: 10px;
-  /* color: teal; */
-  color: teal;
-  position: fixed;
-  margin-top: -11%;
-}
-
-@media (min-width: 100px) and (max-width: 360px) {
-  .hamburger {
-    margin-top: -17%;
+  .navbar {
+    height: 15vh;
+    width: 100vw;
+    background-color: white;
+    color: rgb(0, 128, 96);
+    padding: 0px;
   }
 
   .header {
-    background-color: bisque;
-    position: sticky;
-    height: 11%;
-    width: 100%;
-    margin-top: -60px;
+    background-color: inherit;
+    height: auto;
+    padding: 0px;
+    /* width: 100vw; */
+    border-bottom: 5px solid rgb(0, 128, 96);
+    position: fixed;
+    margin-bottom: 100px;
   }
-
-  form {
-    border: 1px solid;
-    margin: 0px;
-    margin-right: 60px;
-    margin-top: 50px;
-    margin-left: 0px;
+  .header .my-name {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 20px;
   }
-
-  input[type="name"] {
-    height: 30px;
-    width: 150px;
-    margin-left: 10px;
-    margin-right: 0px;
-  }
-
-  input[type="email"] {
-    height: 30px;
-    width: 150px;
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-
-  input[type="text"] {
-    height: 150px;
-    margin-left: 10px;
-    width: 150px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  .send-blog {
-    width: 130px;
-    height: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: white;
-    background-color: red;
-    border-radius: 10px;
-    margin-left: 50px;
-  }
-
-  .blogOne {
-    margin-left: 5px;
-  }
-  .blogTwo {
-    margin-left: 5px;
-  }
-  .blogThree {
-    margin-left: 5px;
-  }
-  .blogFour {
-    margin-left: 5px;
-  }
-  .portoFive {
-    padding: 5px;
-  }
-  .porto-title {
-    margin: 0px;
-    padding: 10px;
-    font-weight: 0px;
-  }
-
-  .portoTwo {
-    border: 1px solid;
-    height: 100%;
-    width: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 5%;
-    margin-left: 2%;
-  }
-
-  .portoThree {
-    border: 1px solid;
-    width: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 5%;
-    margin-left: 2%;
-  }
-}
-/* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
-  .menu {
+  .nav-list {
     display: none;
-    position: absolute;
-    background-color: teal;
-    right: 0;
-    left: 0;
+    width: 100%;
+    /* height: auto; */
+    padding: 0px;
+    
+  }
+ 
+  .nav-link {
+    padding: 5px 0px;
+    cursor: pointer;
+    
+  
+  }
+
+  /* .nav-links{
+    padding: 5px 0px;
+    cursor: pointer;
+    background-color: blue;
+    margin-top: 50px;
+    
+  
+  } */
+
+  .nav-list .nav-link a {
+    color: black;
+    font-size: 18px;
+    padding: 25px;
+    width: 100%;
+  }
+  .nav-list .nav-link:hover {
+    color: rgb(0, 128, 96);
+    font-size: 19px;
+    border-bottom: 4px solid rgb(0, 128, 96);
+  }
+  .nav-list .nav-link a:hover {
+    color: rgb(0, 128, 96);
+  }
+
+  #logoutButton {
+    background-color: rgb(0, 128, 96);
+    border: 1px solid rgb(0, 128, 96);
+    padding: 10px 40px;
+    font-size: 18px;
+    color: blanchedalmond;
+    width: 100%;
+    margin-top: 100px;
+    cursor: pointer;
+  }
+  #dashProfile {
+    width: 100px;
+    height: 100px;
+  }
+
+  .top-header {
+    height: 50px;
+    background-color: rgb(0, 128, 96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #logoutTopHeader {
+    background-color: blanchedalmond;
+    border: 1px solid blanchedalmond;
+    padding: 10px 40px;
+    font-size: 18px;
+    color: rgb(0, 128, 96);
+    cursor: pointer;
+    border-radius: 10px;
+    height: 40px;
     text-align: center;
-    padding: 16px 0;
+    margin-right: 10px;
+  }
+  .current-page {
+    color: blanchedalmond;
+    font-weight: 700;
+    padding-left: 20px;
   }
 
-  .menu li:hover {
-    display: inline-block;
-    background-color: #4c9e9e;
-    transition: 0.3s ease;
+  /* SHOWCASE */
+  .showcase {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+  }
+  .image img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+  .beatifulwords {
+    width: 90%;
   }
 
-  .menu li + li {
-    margin-top: 12px;
+  .beatifulwords p {
+    color: rgb(0, 128, 96);
+    width: 80%;
+    margin: 10px 0px;
+  }
+  .subscribe {
+    margin-top: 20px;
+  }
+  .subInput,
+  .subButton {
+    height: 50px !important;
+    width: 80% !important;
+    margin: 15px auto;
+    border: 1px solid rgb(0, 128, 96) !important;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .subButton {
+    background-color: rgb(0, 128, 96);
+    border: rgb(0, 128, 96);
+    color: blanchedalmond;
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .section-header {
+    padding: 20px 0px;
+  }
+  /* STYLING ABOUT ME */
+
+  .aboutme,
+  .portfolio {
+    background-color: rgb(0, 128, 96);
+    color: blanchedalmond;
+    padding: 20px;
+  }
+  .aboutme p {
+    font-size: 18px;
+    font-family: "Inter";
+    padding: 30px;
+  }
+  /* STYLING SKILLS */
+  .skills {
+    padding: 100px 20px;
+  }
+  .skills-header {
+    color: rgb(0, 128, 96);
+    grid-column: 1/-1;
+  }
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .softskills,
+  .hardskills {
+    width: 90%;
+    padding: 30px;
+    font-size: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .skills-item {
+    background-color: rgb(0, 128, 96) !important;
+    color: blanchedalmond;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
   }
 
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
+  /* PORTFOLIO */
+  .portfolio-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* gap: 30px; */
+  }
+  .project-card {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid blanchedalmond;
+    border-radius: 10px;
+  }
+  .project-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .project-name,
+  .technologies {
+    padding: 20px 0px;
+  }
+  .tech-tags {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* gap: 10px; */
+    width: 100%;
+  }
+  .tech {
+    background-color: blanchedalmond;
+    padding: 5px 10px;
+    color: rgb(0, 128, 96);
+    border-radius: 20px;
+    text-align: center;
   }
 
-  .hamburger {
-    display: block;
+  /* PORTFOLIO */
+  .portfolio-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* gap: 30px; */
   }
+  .project-card {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid blanchedalmond;
+    border-radius: 10px;
+  }
+  .project-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .project-name,
+  .technologies {
+    padding: 20px 0px;
+  }
+  .tech-tags {
+    display: flex;
+    flex-direction: column;
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* gap: 10px; */
+    width: 100%;
+  }
+  .tech {
+    background-color: blanchedalmond;
+    padding: 5px 10px;
+    color: rgb(0, 128, 96);
+    border-radius: 20px;
+    text-align: center;
+  }
+  .footer {
+    background-color: rgb(0, 128, 96);
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2%;
+    width: 100%;
+    /* margin-top: 20px; */
+  }
+  .fa-2x {
+    color: blanchedalmond;
+    font-size: 3px;
+    margin: 0px 5px;
+  }
+
+
+  
+#menuIcon{
+  display: block;
+  margin-left: 90%;
+  margin-top: -7%;
+
 }
+
+}
+
+
