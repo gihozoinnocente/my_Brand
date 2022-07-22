@@ -46,22 +46,25 @@
         <!-- Content -->
         <div class="content">
             <div class="top-header">
-                <h3 class="current-page">Dashboard Page</h3>
+                <h3 class="current-page">Profile Page</h3>
                 <button id="logoutTopHeader" onclick="logout();">Logout</button>
             </div>
-
-            <div id="queries">
-                <!-- <div class="query">
-
-                </div> -->
+            <div id="updateProfile">
+                <form action="" id="contact-form" id="contact-email" method="POST">
+                    <input class="contactinputs" type="text" name="email" placeholder="New password"><br>
+                    <input class="contactinputs" id="contact-name" type="text" name="name" placeholder="Confirm password"><br>
+                   
+                
+                       <button class="sendmessage" class="btn btn-default" onclick='return validateForm()'>Update Password
+                        </button>
+                   
+                </form>
             </div>
         </div>
     </div>
-    <script type="text/JavaScript" src="/helper/fetchAPI.js"></script>
     <script src="/JS/protect-pages.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
-    <script src="./../../JS/query.js"></script>
+    <script src="./JS/qon.js"></script>
     <script src="/JS/logout.js"></script>
 </body>
 
